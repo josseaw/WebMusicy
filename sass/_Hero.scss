@@ -139,7 +139,7 @@
             p{
                 @include p-4();
                 color: #9FA1A7;
-                margin-top: 35px;
+                margin-top: 28px;
                 &:first-child{
                     margin-top: 0px;
                     color: $state-1;
@@ -148,12 +148,12 @@
             h2{
                 color: $color-5;
                 text-transform: capitalize;
-                margin-top: 15px;
+                margin-top: 12px;
             }
             h6{
                 color: $color-5;
                 text-transform: capitalize;
-                margin-top: 15px;
+                margin-top: 12px;
             }
             div{
                 @include relative(210px, 70px);
@@ -162,7 +162,7 @@
                 background: $primary;
                 border-radius: 40px;
                 color: $color-5;
-                margin-top: 45px;
+                margin-top: 38px;
             }
         }
     }

@@ -391,7 +391,7 @@ h6 {
   font-size: 16px;
   line-height: 24px;
   color: #9FA1A7;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 
 .home .event .about-event p:first-child {
@@ -402,13 +402,13 @@ h6 {
 .home .event .about-event h2 {
   color: #FFFFFF;
   text-transform: capitalize;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .home .event .about-event h6 {
   color: #FFFFFF;
   text-transform: capitalize;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .home .event .about-event div {
@@ -430,6 +430,6 @@ h6 {
   background: #375FEB;
   border-radius: 40px;
   color: #FFFFFF;
-  margin-top: 45px;
+  margin-top: 38px;
 }
 /*# sourceMappingURL=style.css.map */
