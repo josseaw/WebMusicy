@@ -119,6 +119,41 @@ h6 {
   background-position: center;
 }
 
+.home .title {
+  position: relative;
+  height: 284px;
+  width: 180px;
+  margin-top: 160px;
+  margin-left: 641px;
+}
+
+.home .title h1 {
+  font-size: 94px;
+  text-transform: uppercase;
+  line-height: 70.4px;
+}
+
+.home .title h1 span {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.home .title h1 span:first-child {
+  color: #375FEB;
+}
+
+.home .title h1 span:nth-child(3) {
+  color: #375FEB;
+}
+
+.home .title p {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+
 nav {
   position: relative;
   height: 87px;
@@ -135,6 +170,7 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: top;
 }
 
 nav .sosmed {
@@ -182,7 +218,7 @@ nav .sosmed a img {
 nav .links {
   position: relative;
   height: 87px;
-  width: 70.3%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -3,6 +3,29 @@
     background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/sam-moghadam.jpg);
     background-size: cover;
     background-position: center;
+    .title{
+        @include relative(180px, 284px);
+        margin-top: 160px;
+        margin-left: 641px;
+        h1{
+            @include Big-Bold(uppercase);
+            span{
+                color: $color-5;
+                margin: 0;
+                &:first-child{
+                    color: $primary;
+                }
+                &:nth-child(3){
+                    color: $primary;
+                }
+            }
+        }
+        p{
+            @include Medium-Upper(uppercase);
+            color: $color-5;
+            margin-top: 15px;
+        }
+    }
 }
 
 nav{
@@ -10,6 +33,7 @@ nav{
     @include flex(space-between);
     flex-wrap: wrap;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: top;
     .sosmed{
         @include relative(222px, 87px);
         @include flex(center);
@@ -30,7 +54,7 @@ nav{
         }
     }
     .links{
-        @include relative(70.3%, 87px);
+        @include relative(65%, 87px);
         @include flex(space-around);
         a{
             @include Small-Upper(uppercase);
