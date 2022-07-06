@@ -133,5 +133,37 @@
                 }
             }
         }
+        .about-event{
+            @include relative(474px, 379px);
+            margin-left: 90px;
+            p{
+                @include p-4();
+                color: #9FA1A7;
+                margin-top: 35px;
+                &:first-child{
+                    margin-top: 0px;
+                    color: $state-1;
+                }
+            }
+            h2{
+                color: $color-5;
+                text-transform: capitalize;
+                margin-top: 15px;
+            }
+            h6{
+                color: $color-5;
+                text-transform: capitalize;
+                margin-top: 15px;
+            }
+            div{
+                @include relative(210px, 70px);
+                @include flex(center);
+                @include Small-title(capitalize);
+                background: $primary;
+                border-radius: 40px;
+                color: $color-5;
+                margin-top: 45px;
+            }
+        }
     }
 }
