@@ -51,8 +51,8 @@ h6 {
 }
 
 .p-x {
-  padding-left: 145px;
-  padding-right: 145px;
+  padding-left: 222px;
+  padding-right: 222px;
 }
 
 .p-y {
@@ -119,11 +119,135 @@ h6 {
   background-position: center;
 }
 
+.home nav {
+  position: relative;
+  height: 87px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: top;
+}
+
+.home nav .sosmed {
+  position: relative;
+  height: 87px;
+  width: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.home nav .sosmed a {
+  position: relative;
+  height: 21px;
+  width: 18px;
+}
+
+.home nav .sosmed a:nth-child(2) {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-left: 24px;
+}
+
+.home nav .sosmed a:nth-child(3) {
+  position: relative;
+  height: 15px;
+  width: 20px;
+  margin-left: 24px;
+}
+
+.home nav .sosmed a img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.home nav .links {
+  position: relative;
+  height: 87px;
+  width: 68%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home nav .links a {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 17.6px;
+  text-decoration: none;
+  color: #9FA1A7;
+}
+
+.home nav .links a span {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 22px;
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.home nav .links a span:first-child {
+  color: #375FEB;
+}
+
+.home nav .login {
+  position: relative;
+  height: 87px;
+  width: 222px;
+}
+
+.home nav .login a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 21.6px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #375FEB;
+  font-weight: bold;
+}
+
 .home .title {
   position: relative;
   height: 284px;
   width: 180px;
-  margin-top: 160px;
+  margin-top: 140px;
   margin-left: 641px;
 }
 
@@ -154,127 +278,13 @@ h6 {
   margin-top: 15px;
 }
 
-nav {
+.home .event {
   position: relative;
-  height: 87px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  position: top;
-}
-
-nav .sosmed {
-  position: relative;
-  height: 87px;
-  width: 222px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-nav .sosmed a {
-  position: relative;
-  height: 21px;
-  width: 18px;
-}
-
-nav .sosmed a:nth-child(2) {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  margin-left: 24px;
-}
-
-nav .sosmed a:nth-child(3) {
-  position: relative;
-  height: 15px;
-  width: 20px;
-  margin-left: 24px;
-}
-
-nav .sosmed a img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-nav .links {
-  position: relative;
-  height: 87px;
-  width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav .links a {
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 17.6px;
-  text-decoration: none;
-  color: #9FA1A7;
-}
-
-nav .links a span {
-  font-size: 20px;
-  text-transform: uppercase;
-  line-height: 22px;
-  margin: 0;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-nav .links a span:first-child {
-  color: #375FEB;
-}
-
-nav .login {
-  position: relative;
-  height: 87px;
-  width: 222px;
-}
-
-nav .login a {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 18px;
-  text-transform: uppercase;
-  line-height: 21.6px;
-  text-decoration: none;
-  color: #FFFFFF;
-  background: #375FEB;
-  font-weight: bold;
+  height: 507px;
+  width: 68%;
+  margin-left: 222px;
+  margin-right: 222px;
+  bottom: -120px;
+  background: #14182C;
 }
 /*# sourceMappingURL=style.css.map */

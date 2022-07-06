@@ -13,6 +13,11 @@
     margin-bottom: $bottom;
 }
 
+@mixin margin-x($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
 @mixin flex($content) {
     display: flex;
     justify-content: $content;
@@ -32,7 +37,7 @@
 }
 
 .p-x {
-    @include padding-x(145px, 145px);
+    @include padding-x(222px, 222px);
 }
 
 .p-y {
