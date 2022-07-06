@@ -3,14 +3,6 @@
 //     src: url('../font/BreeSerif-Regular.otf') format('otf');
 // }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    // font-family: "Bree serif", sans-serif;
-    scroll-behavior: smooth;
-}
-
 // Brand Color
 $primary: #375FEB;
 $secondary: #9B5DD5;
@@ -38,6 +30,18 @@ $h3: 36px;
 $h4: 30px;
 $h5: 25px;
 $h6: 22px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "Bree serif", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: $color-1;
+}
 
 
 h1,
@@ -107,47 +111,56 @@ h6 {
 }
 
 // Display
-@mixin Big-Bold() {
+@mixin Big-Bold($content) {
     font-size: 94px;
+    text-transform: $content;
     line-height: 70.4px;
 }
 
-@mixin Big-Light(){
+@mixin Big-Light($content){
     font-size: 94px;
+    text-transform: $content;
     line-height: 103.4px;
 }
 
-@mixin Large(){
+@mixin Large($content){
     font-size: 72px;
+    text-transform: $content;
     line-height: 60px;
 }
 
-@mixin Medium-Upper(){
+@mixin Medium-Upper($content){
     font-size: 20px;
+    text-transform: $content;
     line-height: 22px;
 }
 
-@mixin Medium-Bold-Upper(){
+@mixin Medium-Bold-Upper($content){
     font-size: 18px;
+    text-transform: $content;
     line-height: 22px;
 }
 
-@mixin Small-Upper(){
+@mixin Small-Upper($content){
     font-size: 16px;
+    text-transform: $content;
     line-height: 17.6px;
 }
 
-@mixin Normal-title(){
+@mixin Normal-title($content){
     font-size: 20px;
+    text-transform: $content;
     line-height: 22px;
 }
 
-@mixin Small-title(){
+@mixin Small-title($content){
     font-size: 18px;
+    text-transform: $content;
     line-height: 21.6px;
 }
 
-@mixin Extra-Small-title(){
+@mixin Extra-Small-title($content){
     font-size: 14px;
+    text-transform: $content;
     line-height: 16.8px;
 }

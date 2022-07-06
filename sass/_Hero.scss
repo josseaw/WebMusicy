@@ -1,0 +1,61 @@
+.home{
+    @include relative(100%, 809px);
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%) url(../img/sam-moghadam.jpg);
+}
+
+nav{
+    @include relative(100%, 87px);
+    @include flex(space-between);
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    .sosmed{
+        @include relative(222px, 87px);
+        @include flex(center);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        a{
+            @include relative(18px, 21px);
+            &:nth-child(2){
+                @include relative(20px, 20px);
+                margin-left: 24px;
+            }
+            &:nth-child(3){
+                @include relative(20px, 15px);
+                margin-left: 24px;
+            }
+            img{
+                @include absolute(100%, 100%);
+            }
+        }
+    }
+    .links{
+        @include relative(70.3%, 87px);
+        @include flex(space-around);
+        a{
+            @include Small-Upper(uppercase);
+            text-decoration: none;
+            color: #9FA1A7;
+            span{
+                @include Normal-title(uppercase);
+                margin: 0;
+                color: $color-5;
+                font-weight: bold;
+                &:first-child{
+                    color: $primary;
+                }
+            }
+        }
+
+    }
+    .login{
+        @include relative(222px, 87px);
+        a{
+            @include absolute (100%, 100%);
+            @include flex(center);
+            @include Small-title(uppercase);
+            text-decoration: none;
+            color: $color-5;
+            background: $primary;
+            font-weight: bold;
+        }
+    }
+}
