@@ -200,9 +200,34 @@ h6 {
   line-height: 17.6px;
   text-decoration: none;
   color: #9FA1A7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.home nav .links a span {
+.home nav .links a:first-child span {
+  left: 86px;
+}
+
+.home nav .links a:nth-child(2) span {
+  left: 290px;
+}
+
+.home nav .links a:nth-child(3) span {
+  left: 508px;
+}
+
+.home nav .links a:nth-child(5) span {
+  left: 898px;
+}
+
+.home nav .links a:hover span {
+  opacity: 1;
+}
+
+.home nav .links a div {
   font-size: 20px;
   text-transform: uppercase;
   line-height: 22px;
@@ -211,8 +236,20 @@ h6 {
   font-weight: bold;
 }
 
-.home nav .links a span:first-child {
+.home nav .links a div:first-child {
   color: #375FEB;
+}
+
+.home nav .links a span {
+  position: absolute;
+  height: 5px;
+  width: 43px;
+  bottom: 0;
+  border-radius: 4.5px;
+  background: #375FEB;
+  opacity: 0;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
 }
 
 .home nav .login {

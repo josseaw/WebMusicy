@@ -35,7 +35,24 @@
                 @include Small-Upper(uppercase);
                 text-decoration: none;
                 color: #9FA1A7;
-                span{
+                display: flex;
+                flex-wrap: wrap;
+                &:first-child span{
+                    left: 86px;
+                }
+                &:nth-child(2) span{
+                    left: 290px;
+                }
+                &:nth-child(3) span{
+                    left: 508px;
+                }
+                &:nth-child(5) span{
+                    left: 898px;
+                }
+                &:hover span{
+                    opacity: 1;
+                }
+                div{
                     @include Normal-title(uppercase);
                     margin: 0;
                     color: $color-5;
@@ -44,8 +61,15 @@
                         color: $primary;
                     }
                 }
+                span{
+                    @include absolute(43px, 5px);
+                    bottom: 0;
+                    border-radius: 4.5px;
+                    background: $primary;
+                    opacity: 0;
+                    transition: .5s ease-out;
+                }
             }
-    
         }
         .login{
             @include relative(222px, 87px);
