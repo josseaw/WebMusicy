@@ -1,0 +1,53 @@
+.album{
+    @include relative(100%, 835px);
+    background: radial-gradient(40.28% 43.56% at 50.17% 48.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../img/ben-pham.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 335px;
+    display: flex;
+    flex-direction: column;
+    .arrow{
+        @include relative(68%, 95px);
+        @include margin-x(222px, 222px);
+        @include flex(space-between);
+        span{
+            @include margin-x(20px, 20px);
+            cursor: pointer;
+        }
+    }
+    .slide-album{
+        @include relative(100%, 415px);
+        display: flex;
+        .img-album{
+            @include relative(285px, 285px);
+            @include margin-x(12px, 12px);
+            &:nth-child(3){
+                @include relative(300px, 300px);
+                margin-top: -7.5px;
+            }
+            img{
+                @include absolute(100%, 100%);
+            }
+        }
+    }
+}
+
+.title-big{
+    @include relative(68%, 190px);
+    @include margin-x(222px, 222px);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.150);
+    padding-top: 95px;
+    h2{
+        color: $color-5;
+        span{
+            @include absolute(43px, 5px);
+            bottom: -3px;
+            margin-left: -142px;
+            border-radius: 4.5px;
+            background: $primary;
+        }
+    }
+}

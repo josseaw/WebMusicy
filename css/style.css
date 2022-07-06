@@ -208,19 +208,19 @@ h6 {
 }
 
 .home nav .links a:first-child span {
-  left: 86px;
+  margin-left: 24px;
 }
 
 .home nav .links a:nth-child(2) span {
-  left: 290px;
+  margin-left: 9.5px;
 }
 
 .home nav .links a:nth-child(3) span {
-  left: 508px;
+  margin-left: 36.5px;
 }
 
 .home nav .links a:nth-child(5) span {
-  left: 898px;
+  margin-left: 16px;
 }
 
 .home nav .links a:hover span {
@@ -431,5 +431,106 @@ h6 {
   border-radius: 40px;
   color: #FFFFFF;
   margin-top: 38px;
+}
+
+.album {
+  position: relative;
+  height: 835px;
+  width: 100%;
+  background: radial-gradient(40.28% 43.56% at 50.17% 48.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../img/ben-pham.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.album .arrow {
+  position: relative;
+  height: 95px;
+  width: 68%;
+  margin-left: 222px;
+  margin-right: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.album .arrow span {
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.album .slide-album {
+  position: relative;
+  height: 415px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.album .slide-album .img-album {
+  position: relative;
+  height: 285px;
+  width: 285px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.album .slide-album .img-album:nth-child(3) {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin-top: -7.5px;
+}
+
+.album .slide-album .img-album img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.title-big {
+  position: relative;
+  height: 190px;
+  width: 68%;
+  margin-left: 222px;
+  margin-right: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 95px;
+}
+
+.title-big h2 {
+  color: #FFFFFF;
+}
+
+.title-big h2 span {
+  position: absolute;
+  height: 5px;
+  width: 43px;
+  bottom: -3px;
+  margin-left: -142px;
+  border-radius: 4.5px;
+  background: #375FEB;
 }
 /*# sourceMappingURL=style.css.map */
