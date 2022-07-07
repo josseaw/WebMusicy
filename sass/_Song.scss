@@ -1,0 +1,6 @@
+.song{
+    @include relative(100%, 1061px);
+    @include padding-x(222px, 222px);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px);
+}

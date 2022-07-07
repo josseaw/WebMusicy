@@ -65,6 +65,11 @@ h6 {
   margin-bottom: 50px;
 }
 
+.m-x {
+  margin-left: 222px;
+  margin-right: 222px;
+}
+
 .container {
   margin: 0;
   display: -webkit-box;
@@ -124,6 +129,8 @@ h6 {
   position: relative;
   height: 87px;
   width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +160,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: -222px;
 }
 
 .home nav .sosmed a {
@@ -184,7 +192,7 @@ h6 {
 .home nav .links {
   position: relative;
   height: 87px;
-  width: 68%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,6 +265,7 @@ h6 {
   position: relative;
   height: 87px;
   width: 222px;
+  margin-right: -222px;
 }
 
 .home nav .login a {
@@ -319,9 +328,15 @@ h6 {
 .home .event {
   position: relative;
   height: 507px;
-  width: 68%;
-  margin-left: 222px;
-  margin-right: 222px;
+  width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
+}
+
+.home .event .list-event {
+  position: relative;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,13 +350,13 @@ h6 {
   background: #14182C;
 }
 
-.home .event span {
+.home .event .list-event span {
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
 
-.home .event .sub-event {
+.home .event .list-event .sub-event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +368,7 @@ h6 {
           align-items: center;
 }
 
-.home .event .sub-event .img-event {
+.home .event .list-event .sub-event .img-event {
   position: relative;
   height: 379px;
   width: 300px;
@@ -376,43 +391,43 @@ h6 {
   margin-left: 20px;
 }
 
-.home .event .sub-event .img-event h3 {
+.home .event .list-event .sub-event .img-event h3 {
   text-transform: capitalize;
   color: #FFFFFF;
 }
 
-.home .event .about-event {
+.home .event .list-event .about-event {
   position: relative;
   height: 379px;
-  width: 474px;
+  width: 490px;
   margin-left: 90px;
 }
 
-.home .event .about-event p {
+.home .event .list-event .about-event p {
   font-size: 16px;
   line-height: 24px;
   color: #9FA1A7;
   margin-top: 28px;
 }
 
-.home .event .about-event p:first-child {
+.home .event .list-event .about-event p:first-child {
   margin-top: 0px;
   color: #3B94E7;
 }
 
-.home .event .about-event h2 {
+.home .event .list-event .about-event h2 {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-top: 12px;
 }
 
-.home .event .about-event h6 {
+.home .event .list-event .about-event h6 {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-top: 12px;
 }
 
-.home .event .about-event div {
+.home .event .list-event .about-event div {
   position: relative;
   height: 70px;
   width: 210px;
@@ -438,7 +453,7 @@ h6 {
   transition: .5s ease-out;
 }
 
-.home .event .about-event div:hover {
+.home .event .list-event .about-event div:hover {
   opacity: .5;
 }
 
@@ -446,6 +461,8 @@ h6 {
   position: relative;
   height: 835px;
   width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
   background: radial-gradient(40.28% 43.56% at 50.17% 48.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../img/ben-pham.jpg);
   background-size: cover;
   background-position: center;
@@ -463,9 +480,7 @@ h6 {
 .album .arrow {
   position: relative;
   height: 95px;
-  width: 68%;
-  margin-left: 222px;
-  margin-right: 222px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,9 +499,11 @@ h6 {
 }
 
 .album .slide-album {
-  position: relative;
+  position: absolute;
   height: 415px;
   width: 100%;
+  left: 0;
+  top: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,9 +625,7 @@ h6 {
 .title-big {
   position: relative;
   height: 190px;
-  width: 68%;
-  margin-left: 222px;
-  margin-right: 222px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,5 +648,16 @@ h6 {
   margin-left: -142px;
   border-radius: 4.5px;
   background: #375FEB;
+}
+
+.song {
+  position: relative;
+  height: 1061px;
+  width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 /*# sourceMappingURL=style.css.map */

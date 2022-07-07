@@ -1,5 +1,6 @@
 .album{
     @include relative(100%, 835px);
+    @include padding-x(222px, 222px);
     background: radial-gradient(40.28% 43.56% at 50.17% 48.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../img/ben-pham.jpg);
     background-size: cover;
     background-position: center;
@@ -8,8 +9,7 @@
     display: flex;
     flex-direction: column;
     .arrow{
-        @include relative(68%, 95px);
-        @include margin-x(222px, 222px);
+        @include relative(100%, 95px);
         @include flex(space-between);
         span{
             @include margin-x(20px, 20px);
@@ -17,7 +17,9 @@
         }
     }
     .slide-album{
-        @include relative(100%, 415px);
+        @include absolute(100%, 415px);
+        left: 0;
+        top: 280px;
         display: flex;
         .img-album{
             @include relative(285px, 285px);
@@ -73,8 +75,7 @@
 }
 
 .title-big{
-    @include relative(68%, 190px);
-    @include margin-x(222px, 222px);
+    @include relative(100%, 190px);
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.150);
