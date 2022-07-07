@@ -113,7 +113,6 @@
     }
     .event{
         @include relative(100%, 507px);
-        @include padding-x(222px, 222px);
         .list-event{
             @include relative(100%, 100%);
             @include flex(space-between);

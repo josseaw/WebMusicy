@@ -1,6 +1,32 @@
-.song{
+.songs{
     @include relative(100%, 1061px);
-    @include padding-x(222px, 222px);
-    background: rgba(255, 255, 255, 0.06);
+    background: $color-3;
     backdrop-filter: blur(15px);
+    .list-song{
+        @include relative(100%, 80%);
+        padding-top: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .song{
+            @include relative(100%, 118px);
+            display: flex;
+            align-items: center;
+            padding: 21px;
+            border-top: .5px solid rgba(255, 255, 255, 0.13);
+            border-bottom: .5px solid rgba(255, 255, 255, 0.13);
+            span{
+                position: relative;
+                &:nth-child(1){
+                    width: 273px;
+                }
+                &:nth-child(2){
+                    width: 287px;
+                }
+                &:nth-child(3){
+                    width: 65px;
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,5 @@
 .album{
     @include relative(100%, 835px);
-    @include padding-x(222px, 222px);
     background: radial-gradient(40.28% 43.56% at 50.17% 48.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../img/ben-pham.jpg);
     background-size: cover;
     background-position: center;
