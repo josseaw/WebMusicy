@@ -799,4 +799,60 @@ h6 {
   width: 100%;
   background: #101324;
 }
+
+.video .page-video {
+  position: relative;
+  height: 562px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/keagan-henman.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 15px;
+  margin-top: 73px;
+  border-radius: 5px;
+}
+
+.video .page-video .icon-play {
+  position: relative;
+  height: 87px;
+  width: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #375FEB;
+  padding-left: 7px;
+  margin-top: 218px;
+  cursor: pointer;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.video .page-video .icon-play:hover {
+  background: none;
+  border: 5px solid #375FEB;
+}
+
+.video .page-video .fitur-video {
+  position: relative;
+  height: 41px;
+  width: 100%;
+  margin-top: 153px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,35 @@
 .video{
     @include relative(100%, 1382px);
     background: #101324;
+    .page-video{
+        @include relative(100%, 562px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: url(../img/keagan-henman.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px 15px;
+        margin-top: 73px;
+        border-radius: 5px;
+        .icon-play{
+            @include relative(87px, 87px);
+            @include flex(center);
+            border-radius: 50%;
+            background: $primary;
+            padding-left: 7px;
+            margin-top: 218px;
+            cursor: pointer;
+            transition: .5s ease-out;
+            &:hover{
+                background: none;
+                border: 5px solid $primary;
+            }
+        }
+        .fitur-video{
+            @include relative(100%, 41px);
+            margin-top: 153px;
+            
+        }
+    }
 }
