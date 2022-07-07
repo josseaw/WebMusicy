@@ -156,13 +156,11 @@
                 margin-top: 12px;
             }
             div{
-                @include relative(210px, 70px);
-                @include flex(center);
-                @include Small-title(capitalize);
-                background: $primary;
-                border-radius: 40px;
-                color: $color-5;
-                margin-top: 38px;
+                @include btn($primary, none);
+                transition: .5s ease-out;
+                &:hover{
+                    opacity: .5;
+                }
             }
         }
     }

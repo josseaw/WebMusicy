@@ -36,6 +36,18 @@
     width: $width;
 }
 
+@mixin btn($background, $border) {
+    @include relative(210px, 70px);
+    @include flex(center);
+    @include Small-title(capitalize);
+    background: $background;
+    border: $border;
+    border-radius: 40px;
+    color: $color-5;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
 .p-x {
     @include padding-x(222px, 222px);
 }

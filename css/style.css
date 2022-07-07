@@ -428,9 +428,17 @@ h6 {
   text-transform: capitalize;
   line-height: 21.6px;
   background: #375FEB;
+  border: none;
   border-radius: 40px;
   color: #FFFFFF;
   margin-top: 38px;
+  cursor: pointer;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.home .event .about-event div:hover {
+  opacity: .5;
 }
 
 .album {
@@ -489,6 +497,12 @@ h6 {
   width: 285px;
   margin-left: 12px;
   margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .album .slide-album .img-album:nth-child(3) {
@@ -502,6 +516,92 @@ h6 {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.album .slide-album .img-album .about {
+  position: relative;
+  height: 280px;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 285px;
+  padding-top: 30px;
+}
+
+.album .slide-album .img-album .about h3 {
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.album .slide-album .img-album .about p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+
+.album .slide-album .img-album .about .list-btn {
+  position: relative;
+  height: 70px;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 26px;
+}
+
+.album .slide-album .img-album .about .list-btn span {
+  position: relative;
+  height: 70px;
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 21.6px;
+  background: #375FEB;
+  border: none;
+  border-radius: 40px;
+  color: #FFFFFF;
+  margin-top: 38px;
+  cursor: pointer;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.album .slide-album .img-album .about .list-btn span:hover {
+  opacity: .5;
+}
+
+.album .slide-album .img-album .about .list-btn span:last-child {
+  background: none;
+  border: 2px solid #375FEB;
+}
+
+.album .slide-album .img-album .about .list-btn span:hover:last-child {
+  opacity: 1;
+  background: #375FEB;
 }
 
 .title-big {
