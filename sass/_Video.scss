@@ -29,7 +29,56 @@
         .fitur-video{
             @include relative(100%, 41px);
             margin-top: 153px;
-            
+            .durasi{
+                @include relative(100%, 4px);
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 2px;
+                span{
+                    @include absolute(62px, 100%);
+                    top: 0;
+                    left: 0;
+                    background: #F21E1E;
+                }
+            }
+            .fitur{
+                @include relative(100%, 37px);
+                @include flex(space-between);
+                @include padding-x(15px, 5px);
+                margin-top: 19px;
+                .left{
+                    @include relative(80px, 17px);
+                    @include flex(space-between);
+                    img{
+                        cursor: pointer;
+                    }
+                }
+                .right{
+                    position: relative;
+                    img{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .about-video{
+        @include padding-x(20px, 20px);
+        position: relative;
+        width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+        h4{
+            color: $color-5;
+            margin-top: 31px;
+        }
+        h6{
+            color: $color-5;
+            margin-top: 25px;
+        }
+        p{
+            @include p-4();
+            color: #9FA1A7;
+            margin-top: 8px;
         }
     }
 }

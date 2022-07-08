@@ -855,4 +855,92 @@ h6 {
   width: 100%;
   margin-top: 153px;
 }
+
+.video .page-video .fitur-video .durasi {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.video .page-video .fitur-video .durasi span {
+  position: absolute;
+  height: 100%;
+  width: 62px;
+  top: 0;
+  left: 0;
+  background: #F21E1E;
+}
+
+.video .page-video .fitur-video .fitur {
+  position: relative;
+  height: 37px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin-top: 19px;
+}
+
+.video .page-video .fitur-video .fitur .left {
+  position: relative;
+  height: 17px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video .page-video .fitur-video .fitur .left img {
+  cursor: pointer;
+}
+
+.video .page-video .fitur-video .fitur .right {
+  position: relative;
+}
+
+.video .page-video .fitur-video .fitur .right img {
+  cursor: pointer;
+}
+
+.video .about-video {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.video .about-video h4 {
+  color: #FFFFFF;
+  margin-top: 31px;
+}
+
+.video .about-video h6 {
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+.video .about-video p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #9FA1A7;
+  margin-top: 8px;
+}
 /*# sourceMappingURL=style.css.map */
