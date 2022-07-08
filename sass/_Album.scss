@@ -52,21 +52,6 @@
                     @include relative(450px, 70px);
                     @include flex(space-between);
                     margin-top: 26px;
-                    span{
-                        @include btn($primary, none);
-                        transition: .5s ease-out;
-                        &:hover{
-                            opacity: .5;
-                        }
-                        &:last-child{
-                            background: none;
-                            border: 2px solid $primary;
-                        }
-                        &:hover:last-child{
-                            opacity: 1;
-                            background: $primary;
-                        }
-                    }
                 }
             }
         }

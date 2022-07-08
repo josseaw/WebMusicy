@@ -60,13 +60,5 @@
                 background: #101324;
             }
         }
-        .btn-song{
-            @include btn(none, 2px solid $primary);
-            margin-top: 55px;
-            transition: .5s ease-out;
-            &:hover{
-                background: $primary;
-            }
-        }
     }
 }

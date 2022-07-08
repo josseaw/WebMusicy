@@ -80,5 +80,42 @@
             color: #9FA1A7;
             margin-top: 8px;
         }
+        .list-video{
+            @include flex(space-between);
+            position: relative;
+            width: 100%;
+            margin-top: 29px;
+            .videos{
+                position: relative;
+                width: 305px;
+                .play{
+                    @include relative(100%, 172px);
+                    @include flex(center);
+                    border-radius: 5px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: .5s ease-out;
+                    &:hover .icon-play{
+                        background: none;
+                        border: 3px solid $primary;
+                    }
+                    img{
+                        @include absolute(100%, 100%);
+                        top: 0;
+                        left: 0;
+                    }
+                    .icon-play{
+                        @include relative(49px, 49px);
+                        @include flex(center);
+                        border-radius: 50%;
+                        background: $primary;
+                        img{
+                            @include relative(11px, 14.5px);
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

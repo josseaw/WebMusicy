@@ -64,20 +64,22 @@
     @include margin-x(222px, 222px);
 }
 
-.container {
-    margin: 0;
-    @include flex(center);
-    flex-direction: column;
+.m-t-55{
+    margin-top: 55px;
 }
 
-.container-content {
-    position: relative;
-    @include flex(space-between);
-    width: 100%;
+.btn-bg{
+    @include btn($primary, none);
+    transition: .5s ease-out;
+    &:hover{
+        opacity: .5;
+    }
 }
 
-.container-content-2 {
-    position: relative;
-    @include flex(space-evenly);
-    width: 100%;
+.btn{
+    @include btn(none, 2px solid $primary);
+    transition: .5s ease-out;
+    &:hover{
+        background: $primary;
+    }
 }

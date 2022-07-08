@@ -160,13 +160,6 @@
                     text-transform: capitalize;
                     margin-top: 12px;
                 }
-                div{
-                    @include btn($primary, none);
-                    transition: .5s ease-out;
-                    &:hover{
-                        opacity: .5;
-                    }
-                }
             }
         }
     }
