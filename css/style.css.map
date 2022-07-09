@@ -9,7 +9,8 @@
         "../sass/_Album.scss",
         "../sass/_Song.scss",
         "../sass/_Video.scss",
-        "../sass/_Follow.scss"
+        "../sass/_Follow.scss",
+        "../sass/_Footer.scss"
     ],
     "names": [],
     "file": "style.css"
