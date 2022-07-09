@@ -1,15 +1,61 @@
 footer{
     @include relative(100%, 630px);
-    @include padding-x(222px, 222px);
     .subscribe{
         @include relative(100%, 386px);
+        @include padding-x(222px, 222px);
+        background: $color-2;
         display: flex;
         align-items: center;
         flex-direction: column;
         .title{
+            @include flex(center);
             position: relative;
             width: 100%;
             margin-top: 120px;
-        }   
+            h3{
+                color: $color-5;
+            }
+        } 
+        .input-sub{
+            @include flex(center);
+            position: relative;
+            width: 100%;
+            .input{
+                @include relative(450px, 70px);
+                @include flex(center);
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 47px;
+                margin-top: 39px;
+                input{
+                    @include relative(370px, 26px);
+                    @include p-4();
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: $color-5;
+                }
+            }
+        }  
+    }
+    .contact{
+        @include relative(100%, 244px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 30px;
+        p{
+            @include p-4();
+            color: #9FA1A7;
+        }
+        .sosmed{
+            @include relative(235px, 20px);
+            @include flex(space-between);
+            margin-top: 30px;
+        }
+        span{
+            @include p-4();
+            color: #9FA1A7;
+            margin-top: 67px;
+        }
     }
 }
