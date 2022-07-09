@@ -1032,4 +1032,34 @@ h6 {
   left: 0;
   border-radius: 5px;
 }
+
+footer {
+  position: relative;
+  height: 630px;
+  width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
+}
+
+footer .subscribe {
+  position: relative;
+  height: 386px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .subscribe .title {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
 /*# sourceMappingURL=style.css.map */

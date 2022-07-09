@@ -1,0 +1,15 @@
+footer{
+    @include relative(100%, 630px);
+    @include padding-x(222px, 222px);
+    .subscribe{
+        @include relative(100%, 386px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            position: relative;
+            width: 100%;
+            margin-top: 120px;
+        }   
+    }
+}
