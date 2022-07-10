@@ -201,28 +201,28 @@ h6 {
   text-transform: capitalize;
   color: #FFFFFF;
 }
-.home .event .list-event .about-event {
+.home .event .list-event .sub-event .about-event {
   position: relative;
   height: 379px;
   width: 490px;
   margin-left: 90px;
 }
-.home .event .list-event .about-event p {
+.home .event .list-event .sub-event .about-event p {
   font-size: 16px;
   line-height: 24px;
   color: #9FA1A7;
   margin-top: 28px;
 }
-.home .event .list-event .about-event p:first-child {
+.home .event .list-event .sub-event .about-event p:first-child {
   margin-top: 0px;
   color: #3B94E7;
 }
-.home .event .list-event .about-event h2 {
+.home .event .list-event .sub-event .about-event h2 {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-top: 12px;
 }
-.home .event .list-event .about-event h6 {
+.home .event .list-event .sub-event .about-event h6 {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-top: 12px;
@@ -395,68 +395,69 @@ nav .login a {
 }
 .biography .event {
   position: relative;
-  height: 507px;
+  height: 910px;
   width: 100%;
 }
 .biography .event .list-event {
   position: relative;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  bottom: -120px;
-  background: #14182C;
+  padding: 20px;
+  bottom: -40px;
+  background: linear-gradient(180deg, rgba(38, 79, 226, 0.2) 0%, rgba(38, 79, 226, 0) 100%);
 }
-.biography .event .list-event span {
-  margin-left: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-.biography .event .list-event .sub-event {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.biography .event .list-event .sub-event .img-event {
+.biography .event .list-event .events {
   position: relative;
-  height: 379px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.biography .event .list-event .events .sub-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.biography .event .list-event .events .sub-event .img-event {
+  position: relative;
+  height: 469px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../img/spencer-davis.jpg);
+  background: url(../img/band_all.png);
   background-size: cover;
   background-position: center;
-  margin-left: 20px;
 }
-.biography .event .list-event .sub-event .img-event h3 {
+.biography .event .list-event .events .sub-event .img-event h3 {
   text-transform: capitalize;
   color: #FFFFFF;
 }
-.biography .event .list-event .about-event {
+.biography .event .list-event .events .sub-event .about-event {
   position: relative;
-  height: 379px;
-  width: 490px;
+  height: 469px;
+  width: 50%;
   margin-left: 90px;
 }
-.biography .event .list-event .about-event p {
+.biography .event .list-event .events .sub-event .about-event p {
   font-size: 16px;
   line-height: 24px;
   color: #9FA1A7;
   margin-top: 28px;
 }
-.biography .event .list-event .about-event p:first-child {
+.biography .event .list-event .events .sub-event .about-event p:first-child {
   margin-top: 0px;
   color: #3B94E7;
 }
-.biography .event .list-event .about-event h2 {
+.biography .event .list-event .events .sub-event .about-event h2 {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-top: 12px;
 }
-.biography .event .list-event .about-event h6 {
+.biography .event .list-event .events .sub-event .about-event h6 {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-top: 12px;
