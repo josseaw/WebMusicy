@@ -295,3 +295,38 @@ nav{
         }
     }
 }
+
+.events{
+    @include relative(100%, 662px);
+    background: radial-gradient(50% 36.13% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/keagan-henman2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .title{
+        @include relative(600px, 284px);
+        margin-top: 230px;
+        margin-left: 430px;
+        h1{
+            @include Big-Bold(uppercase);
+            display: flex;
+            span{
+                color: $color-5;
+                margin: 0;
+                &:first-child{
+                    color: $primary;
+                }
+                &:nth-child(2){
+                    color: $color-5;
+                    margin-left: 25px;
+                }
+            }
+        }
+        p{
+            @include relative(100%, 22px);
+            @include flex(center);
+            @include Medium-Upper(uppercase);
+            color: $color-5;
+            margin-top: 20px;
+        }
+    }
+}

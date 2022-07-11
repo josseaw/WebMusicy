@@ -539,6 +539,53 @@ nav .login a {
   margin-top: 16px;
 }
 
+.events {
+  position: relative;
+  height: 662px;
+  width: 100%;
+  background: radial-gradient(50% 36.13% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/keagan-henman2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.events .title {
+  position: relative;
+  height: 284px;
+  width: 600px;
+  margin-top: 230px;
+  margin-left: 430px;
+}
+.events .title h1 {
+  font-size: 94px;
+  text-transform: uppercase;
+  line-height: 70.4px;
+  display: flex;
+}
+.events .title h1 span {
+  color: #FFFFFF;
+  margin: 0;
+}
+.events .title h1 span:first-child {
+  color: #375FEB;
+}
+.events .title h1 span:nth-child(2) {
+  color: #FFFFFF;
+  margin-left: 25px;
+}
+.events .title p {
+  position: relative;
+  height: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
 footer {
   position: relative;
   height: 630px;
