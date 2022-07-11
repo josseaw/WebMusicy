@@ -203,7 +203,7 @@ nav{
         .list-event{
             @include relative(100%, 100%);
             padding: 20px;
-            bottom: -40px;
+            top: 35px;
             background: linear-gradient(180deg, rgba(38, 79, 226, 0.2) 0%, rgba(38, 79, 226, 0) 100%);
             .events{
                 @include relative(100%, 100%);
@@ -215,37 +215,79 @@ nav{
                     width: 100%;
                     .img-event{
                         @include relative(50%, 469px);
-                        @include flex(center);
-                        flex-direction: column;
                         background: url(../img/band_all.png);
+                        padding-top: 144px;
                         background-size: cover;
                         background-position: center;
-                        h3{
-                            text-transform: capitalize;
+                        display: flex;
+                        flex-direction: column;
+                        span{
+                            @include Large(uppercase);
                             color: $color-5;
+                            font-weight: bold;
+                            margin-left: 436px;
+                            &:first-child{
+                                color: $primary;
+                            }
+                            &:nth-child(3){
+                                color: $primary;
+                            }
                         }
                     }
                     .about-event{
                         @include relative(50%, 469px);
-                        margin-left: 90px;
-                        p{
-                            @include p-4();
-                            color: #9FA1A7;
-                            margin-top: 28px;
-                            &:first-child{
-                                margin-top: 0px;
-                                color: $state-1;
+                        @include flex(center);
+                        .text{
+                            @include relative(300px, 300px);
+                            h2{
+                                text-transform: capitalize;
+                                font-weight: bold;
+                                color: $color-5;
+                            }
+                            p{
+                                @include p-4();
+                                color: #9FA1A7;
+                                margin-top: 33px;
                             }
                         }
-                        h2{
-                            color: $color-5;
-                            text-transform: capitalize;
-                            margin-top: 12px;
+                    }
+                }
+                .list-box{
+                    @include flex(space-between);
+                    position: relative;
+                    width: 100%;
+                    margin-top: 130px;
+                    .box{
+                        @include relative(228px, 218px);
+                        border: 1px solid $primary;
+                        border-radius: 5px;
+                        padding: 24px 28px;
+                        &:nth-child(1){
+                            margin-top: -70px;
                         }
-                        h6{
-                            color: $color-5;
-                            text-transform: capitalize;
-                            margin-top: 12px;
+                        &:nth-child(2){
+                            margin-bottom: -120px;
+                        }
+                        &:nth-child(3){
+                            margin-top: -210px;
+                        }
+                        .title-box{
+                            @include relative(100%, 44px);
+                            @include flex(space-between);
+                            h2{
+                                color: $color-5;
+                            }
+                            span{
+                                @include relative(110px, 44px);
+                                @include Normal-title(uppercase);
+                                color: $color-5;
+                            }
+                        }
+                        p{
+                            @include p-5();
+                            position: relative;
+                            color: #9FA1A7;
+                            margin-top: 16px;
                         }
                     }
                 }

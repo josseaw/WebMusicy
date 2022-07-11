@@ -64,12 +64,28 @@
     @include margin-x(222px, 222px);
 }
 
+.p-x-75{
+    @include padding-x(75px, 75px);
+}
+
 .m-l-27{
     margin-left: 27px;
 }
 
 .m-t-55{
     margin-top: 55px;
+}
+
+.mt-22{
+    margin-top: -22px;
+}
+
+.ml-142{
+    margin-left: -142px;
+}
+
+.ml-115{
+    margin-left: -115px;
 }
 
 .btn-bg{
