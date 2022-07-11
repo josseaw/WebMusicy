@@ -1,12 +1,57 @@
 .personnel{
-    @include relative(100%, 945px);
+    @include relative(100%, 955px);
     background: url(../img/Timeline.png);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 16px 147px 128px;
+    padding: 0px 147px 100px;
     margin-top: 885px;
     .person{
         @include relative(100%, 100%);
         background: radial-gradient(50% 50% at 50% 50%, rgba(38, 79, 226, 0.3) 0%, rgba(38, 79, 226, 0.2) 30.21%, rgba(38, 79, 226, 0) 100%);
+        display: flex;
+        flex-direction: column;
+        .biodata{
+            @include flex(space-between);
+            position: relative;
+            width: 100%;
+            margin-top: 70px;
+            .people{
+                @include relative(170px, 305px);
+                display: flex;
+                flex-direction: column;
+                &:nth-child(2){
+                    margin-top: 115px;
+                }
+                &:nth-child(4){
+                    margin-top: 115px;
+                }
+                h5{
+                    text-transform: capitalize;
+                    color: $color-5;
+                    margin-top: 21px;
+                }
+                p{
+                    @include p-4();
+                    text-transform: capitalize;
+                    color: #9FA1A7;
+                }
+            }
+        }
+        .stories{
+            @include relative(100%, 200px);
+            @include flex(center);
+            flex-direction: column;
+            margin-top: 20px;
+            h3{
+                color: $color-5;
+            }
+            p{
+                @include relative(750px, 73px);
+                @include p-4();
+                text-align: center;
+                color: #9FA1A7;
+                margin-top: 16px;
+            }
+        }
     }
 }

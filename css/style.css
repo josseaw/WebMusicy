@@ -1042,12 +1042,12 @@ footer .contact span {
 
 .personnel {
   position: relative;
-  height: 945px;
+  height: 955px;
   width: 100%;
   background: url(../img/Timeline.png);
   background-position: center;
   background-repeat: no-repeat;
-  padding: 16px 147px 128px;
+  padding: 0px 147px 100px;
   margin-top: 885px;
 }
 .personnel .person {
@@ -1055,4 +1055,61 @@ footer .contact span {
   height: 100%;
   width: 100%;
   background: radial-gradient(50% 50% at 50% 50%, rgba(38, 79, 226, 0.3) 0%, rgba(38, 79, 226, 0.2) 30.21%, rgba(38, 79, 226, 0) 100%);
+  display: flex;
+  flex-direction: column;
+}
+.personnel .person .biodata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 70px;
+}
+.personnel .person .biodata .people {
+  position: relative;
+  height: 305px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+}
+.personnel .person .biodata .people:nth-child(2) {
+  margin-top: 115px;
+}
+.personnel .person .biodata .people:nth-child(4) {
+  margin-top: 115px;
+}
+.personnel .person .biodata .people h5 {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 21px;
+}
+.personnel .person .biodata .people p {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #9FA1A7;
+}
+.personnel .person .stories {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.personnel .person .stories h3 {
+  color: #FFFFFF;
+}
+.personnel .person .stories p {
+  position: relative;
+  height: 73px;
+  width: 750px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #9FA1A7;
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
