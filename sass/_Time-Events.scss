@@ -1,0 +1,10 @@
+.time-events{
+    @include relative(100%, 1066px);
+    padding: 18px 147px;
+    .event{
+        @include relative(100%, 100%);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(38, 79, 226, 0.3) 0%, rgba(38, 79, 226, 0.2) 30.21%, rgba(38, 79, 226, 0) 100%);
+        display: flex;
+        flex-direction: column;
+    }
+}
