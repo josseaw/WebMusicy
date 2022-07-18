@@ -1167,11 +1167,53 @@ footer .contact span {
   width: 100%;
   padding: 18px 147px;
 }
-.time-events .event {
+.time-events__event {
   position: relative;
   height: 100%;
   width: 100%;
   background: radial-gradient(50% 50% at 50% 50%, rgba(38, 79, 226, 0.3) 0%, rgba(38, 79, 226, 0.2) 30.21%, rgba(38, 79, 226, 0) 100%);
   display: flex;
   flex-direction: column;
+  padding: 54px 75px;
+}
+.time-events__event .time-start {
+  position: relative;
+  height: 170px;
+  width: 720px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.time-events__event .time-start h3 {
+  color: #FFFFFF;
+}
+.time-events__event .time-start .time-start-times {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.time-events__event .time-start .time-start-times__time {
+  position: relative;
+  height: 100%;
+  width: 180px;
+  text-align: center;
+}
+.time-events__event .time-start .time-start-times__time span {
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.time-events__event .time-start .time-start-times__time p {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 17.6px;
+  color: #FFFFFF;
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
