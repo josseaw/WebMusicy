@@ -37,5 +37,52 @@
                 }
             }
         }
+        .box-events{
+            @include relative(997px, 657px);
+            @include flex(space-between);
+            background: rgba(20, 24, 44, 0.75);
+            box-shadow: 0px 50px 200px -20px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin-top: 96px;
+            overflow: hidden;
+            &__detail-event{
+                @include relative(420px, 100%);
+                @include padding-x(79px, 71px);
+                background: linear-gradient(180deg, rgba(16, 19, 36, 0.43) 0%, #101324 100%), url(../img/alexander-popov.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                span{
+                    @include relative(146px, 29px);
+                    @include flex(center);
+                    @include p-5();
+                    text-transform: capitalize;
+                    color: $color-5;
+                    background: #F74141;
+                    border-radius: 4px;
+                    margin-top: 132px;
+                }
+                h3{
+                    text-transform: capitalize;
+                    color: $color-5;
+                    margin-top: 20px
+                }
+                p{
+                    @include p-3();
+                    color: $color-5;
+                    text-transform: capitalize;
+                    margin-top: 7px;
+                    &:last-child{
+                        @include p-4();
+                        color: #9FA1A7;
+                        text-transform: none;
+                        margin-top: 40px;
+                    }
+                }
+            }
+            &__booking-event{
+                @include relative(590px, 100%);
+            }
+        }
     }
 }
