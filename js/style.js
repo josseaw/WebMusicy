@@ -4,4 +4,10 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3
     });
-  });
+    $('.list-event').slick({
+        infinite: true,
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});

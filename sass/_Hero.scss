@@ -33,6 +33,7 @@
         .list-event{
             @include relative(100%, 100%);
             @include flex(space-between);
+            @include padding-x(100px, 100px);
             bottom: -120px;
             background: #14182C;
             span{
