@@ -82,6 +82,71 @@
             }
             &__booking-event{
                 @include relative(590px, 100%);
+                @include padding-x(87px, 80px);
+                padding-top: 60px;
+                h4{
+                    color: $color-5;
+                    text-transform: capitalize;
+                }
+                p{
+                    @include p-4();
+                    color: rgba($color-5, 0.5);
+                    margin-top: 5px;
+                }
+                .form{
+                    position: relative;
+                    width: 100%;
+                    margin-top: 44px;
+                    
+                    &__input{
+                        @include relative(100%, 43px);
+                        display: flex;
+                        align-items: center;
+                        margin-top: 22px;
+                        label{
+                            @include relative(20%, 100%);
+                            @include p-4();
+                            display: flex;
+                            align-items: center;
+                            text-transform: capitalize;
+                            color: $color-5;
+                        }
+                        &--text{
+                            @include relative(80%, 100%);
+                            background: $color-1;
+                            border-radius: 4px;
+                            color: $color-5;
+                            outline: none;
+                            border: 1px solid $color-4;
+                            padding-left: 10px;
+                            &:focus{
+                                border: 1px solid $state-1;
+                            }
+                        }
+                        &--text_width{
+                            @include relative(25%, 100%);
+                            background: $color-1;
+                            color: $color-5;
+                            outline: none;
+                            border-radius: 4px;
+                            border: 1px solid $color-4;
+                            padding-left: 10px;
+                            margin-right: 12px;
+                            &:focus{
+                                border: 1px solid $state-1;
+                            }
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                        &--radio{
+                            @include relative(24px, 24px);
+                            background: none;
+                            border-radius: 50%;
+                            border: 2px solid #9FA1A7;
+                        }
+                    }
+                }
             }
         }
     }

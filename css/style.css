@@ -1520,4 +1520,81 @@ footer .contact span {
   position: relative;
   height: 100%;
   width: 590px;
+  padding-left: 80px;
+  padding-right: 87px;
+  padding-top: 60px;
+}
+.time-events__event .box-events__booking-event h4 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.time-events__event .box-events__booking-event p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+}
+.time-events__event .box-events__booking-event .form {
+  position: relative;
+  width: 100%;
+  margin-top: 44px;
+}
+.time-events__event .box-events__booking-event .form__input {
+  position: relative;
+  height: 43px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+.time-events__event .box-events__booking-event .form__input label {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.time-events__event .box-events__booking-event .form__input--text {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  background: #101324;
+  border-radius: 4px;
+  color: #FFFFFF;
+  outline: none;
+  border: 1px solid #404250;
+  padding-left: 10px;
+}
+.time-events__event .box-events__booking-event .form__input--text:focus {
+  border: 1px solid #3B94E7;
+}
+.time-events__event .box-events__booking-event .form__input--text_width {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  background: #101324;
+  color: #FFFFFF;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #404250;
+  padding-left: 10px;
+  margin-right: 12px;
+}
+.time-events__event .box-events__booking-event .form__input--text_width:focus {
+  border: 1px solid #3B94E7;
+}
+.time-events__event .box-events__booking-event .form__input--text_width:last-child {
+  margin-right: 0;
+}
+.time-events__event .box-events__booking-event .form__input--radio {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid #9FA1A7;
 }/*# sourceMappingURL=style.css.map */
