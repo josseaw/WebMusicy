@@ -1460,7 +1460,7 @@ footer .contact span {
 .time-events__event .box-events {
   position: relative;
   height: 657px;
-  width: 997px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1470,7 +1470,6 @@ footer .contact span {
           backdrop-filter: blur(20px);
   border-radius: 20px;
   margin-top: 96px;
-  overflow: hidden;
 }
 .time-events__event .box-events__detail-event {
   position: relative;
@@ -1481,6 +1480,8 @@ footer .contact span {
   background: linear-gradient(180deg, rgba(16, 19, 36, 0.43) 0%, #101324 100%), url(../img/alexander-popov.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px 0px 0px 20px;
+  overflow: hidden;
 }
 .time-events__event .box-events__detail-event span {
   position: relative;
@@ -1520,9 +1521,10 @@ footer .contact span {
   position: relative;
   height: 100%;
   width: 590px;
-  padding-left: 80px;
-  padding-right: 87px;
+  padding-left: 50px;
+  padding-right: 95px;
   padding-top: 60px;
+  padding-bottom: 67px;
 }
 .time-events__event .box-events__booking-event h4 {
   color: #FFFFFF;
@@ -1537,7 +1539,7 @@ footer .contact span {
 .time-events__event .box-events__booking-event .form {
   position: relative;
   width: 100%;
-  margin-top: 44px;
+  margin-top: 42px;
 }
 .time-events__event .box-events__booking-event .form__input {
   position: relative;
@@ -1545,7 +1547,7 @@ footer .contact span {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 22px;
+  margin-top: 19px;
 }
 .time-events__event .box-events__booking-event .form__input label {
   position: relative;
@@ -1557,6 +1559,13 @@ footer .contact span {
   align-items: center;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+.time-events__event .box-events__booking-event .form__input p {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  margin-left: 16px;
 }
 .time-events__event .box-events__booking-event .form__input--text {
   position: relative;
@@ -1594,7 +1603,49 @@ footer .contact span {
   position: relative;
   height: 24px;
   width: 24px;
-  background: none;
-  border-radius: 50%;
-  border: 2px solid #9FA1A7;
+  margin-left: 17px;
+}
+.time-events__event .box-events__booking-event .form__input--radio:nth-child(2) {
+  margin-left: 0;
+}
+.time-events__event .box-events__booking-event .form__submit {
+  position: relative;
+  height: 49px;
+  width: 305px;
+  background: #375FEB;
+  border-radius: 23.5px;
+  border: none;
+  margin-left: 105px;
+  margin-top: 23px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.time-events__event .box-events__booking-event .form__submit:hover {
+  opacity: 0.7;
+}
+.time-events__event .highlight {
+  position: relative;
+  width: 100%;
+  padding: 48px 64px;
+  border: 1px solid #212433;
+  border-radius: 3px;
+  margin-top: 56px;
+}
+.time-events__event .highlight h5 {
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.time-events__event .highlight p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 29px;
+}
+
+.featured {
+  position: relative;
+  height: 719px;
+  width: 100%;
+  margin-top: 780px;
 }/*# sourceMappingURL=style.css.map */
