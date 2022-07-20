@@ -110,6 +110,7 @@ h6 {
   border-radius: 40px;
   color: #FFFFFF;
   margin-top: 38px;
+  text-decoration: none;
   cursor: pointer;
   transition: 0.5s ease-out;
 }
@@ -132,6 +133,7 @@ h6 {
   border-radius: 40px;
   color: #FFFFFF;
   margin-top: 38px;
+  text-decoration: none;
   cursor: pointer;
   transition: 0.5s ease-out;
 }
@@ -1753,4 +1755,32 @@ footer .contact span {
   height: 100%;
   width: 100%;
   border-radius: 3px;
+  opacity: 0.4;
+}
+.other-event__event .list-events__list--name {
+  position: relative;
+  width: 180px;
+  z-index: 10;
+  margin-top: 187px;
+  margin-left: 28px;
+  text-align: center;
+}
+.other-event__event .list-events__list--name p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #15A8FB;
+  text-transform: capitalize;
+}
+.other-event__event .list-events__list--name h5 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.other-event__event .list-events__btn {
+  position: relative;
+  height: 74px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */

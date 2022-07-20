@@ -32,18 +32,21 @@
             margin-top: 31px;
             &__list{
                 @include relative(235px, 290px);
-                @include padding-x(15px);
                 img{
                     @include absolute(100%, 100%);
                     border-radius: 3px;
+                    opacity: .4;
                 }
                 &--name{
                     position: relative;
                     width: 180px;
                     z-index: 10;
+                    margin-top: 187px;
+                    margin-left: 28px;
+                    text-align: center;
                     p{
                         @include p-5();
-                        color: $primary;
+                        color: $secondary-3;
                         text-transform: capitalize;
                     }
                     h5{
@@ -51,6 +54,11 @@
                         text-transform: capitalize;
                     }
                 }
+            }
+            &__btn{
+                @include relative(100%, 74px);
+                @include flex(center);
+                margin-top: 30px;
             }
         }
     }
