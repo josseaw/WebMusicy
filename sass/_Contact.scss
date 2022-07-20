@@ -1,11 +1,11 @@
 .contac{
-    @include relative(100%, 809px);
-    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/sam-moghadam.jpg);
+    @include relative(100%, 586px);
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/Maps.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     &__title{
-        @include relative(600px, 284px);
+        @include relative(100%, 100%);
         @include flex(center);
         flex-direction: column;
         h1{
@@ -17,8 +17,8 @@
                 &:first-child{
                     color: $primary;
                 }
-                &:nth-child(3){
-                    color: $primary;
+                &:last-child{
+                    margin-left: 20px;
                 }
             }
         }
@@ -29,5 +29,14 @@
             color: $color-5;
             margin-top: 20px;
         }
+    }
+    &__form{
+        @include relative(858px, 509px);
+        @include margin-x(auto, auto);
+        margin-top: -100px;
+        background: $color-2;
+        box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(20px);
+        border-radius: 5px;
     }
 }

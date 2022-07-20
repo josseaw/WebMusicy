@@ -65,6 +65,10 @@ h6 {
   margin-bottom: 50px;
 }
 
+.m-t {
+  margin-top: 479px;
+}
+
 .m-x {
   margin-left: 222px;
   margin-right: 222px;
@@ -1880,17 +1884,17 @@ footer .contact span {
 
 .contac {
   position: relative;
-  height: 809px;
+  height: 586px;
   width: 100%;
-  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/sam-moghadam.jpg);
+  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/Maps.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .contac__title {
   position: relative;
-  height: 284px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1909,8 +1913,8 @@ footer .contact span {
 .contac__title h1 span:first-child {
   color: #375FEB;
 }
-.contac__title h1 span:nth-child(3) {
-  color: #375FEB;
+.contac__title h1 span:last-child {
+  margin-left: 20px;
 }
 .contac__title p {
   position: relative;
@@ -1924,4 +1928,17 @@ footer .contact span {
   line-height: 22px;
   color: #FFFFFF;
   margin-top: 20px;
+}
+.contac__form {
+  position: relative;
+  height: 509px;
+  width: 858px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  background: #13172B;
+  box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

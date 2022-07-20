@@ -61,6 +61,10 @@
     @include margin-y(50px, 50px);
 }
 
+.m-t{
+    margin-top: 479px;
+}
+
 .m-x{
     @include margin-x(222px, 222px);
 }
