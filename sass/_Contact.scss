@@ -1,0 +1,33 @@
+.contac{
+    @include relative(100%, 809px);
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/sam-moghadam.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__title{
+        @include relative(600px, 284px);
+        @include flex(center);
+        flex-direction: column;
+        h1{
+            @include Big-Bold(uppercase);
+            display: flex;
+            span{
+                color: $color-5;
+                margin: 0;
+                &:first-child{
+                    color: $primary;
+                }
+                &:nth-child(3){
+                    color: $primary;
+                }
+            }
+        }
+        p{
+            @include relative(100%, 22px);
+            @include flex(center);
+            @include Medium-Upper(uppercase);
+            color: $color-5;
+            margin-top: 20px;
+        }
+    }
+}
