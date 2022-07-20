@@ -1645,7 +1645,112 @@ footer .contact span {
 
 .featured {
   position: relative;
-  height: 719px;
+  height: 789px;
   width: 100%;
   margin-top: 780px;
+}
+.featured__list {
+  position: relative;
+  width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
+}
+.featured__singer {
+  position: relative;
+  height: 579px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 63px 222px;
+  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0) 0%, rgba(16, 19, 36, 0.28) 32.81%, rgba(16, 19, 36, 0.87) 100%), url(../img/keagan-henman2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.featured__singer .image {
+  position: relative;
+  height: 227px;
+  width: 210px;
+  margin-top: 0;
+}
+.featured__singer .image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.featured__singer .image__name {
+  position: relative;
+  width: 163px;
+  z-index: 2;
+  margin-top: 160px;
+  margin-left: 19px;
+}
+.featured__singer .image__name h5 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.featured__singer .image__name p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+.other-event {
+  position: relative;
+  height: 760px;
+  width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
+}
+.other-event__title {
+  position: relative;
+  height: 212px;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 56px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.other-event__title h3 {
+  color: #FFFFFF;
+  text-align: center;
+}
+.other-event__title p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 16px;
+}
+.other-event__event {
+  position: relative;
+  height: 568px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.other-event__event h6 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  margin-top: 9px;
+}
+.other-event__event .list-events {
+  position: relative;
+  height: 290px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 31px;
+}
+.other-event__event .list-events__list {
+  position: relative;
+  height: 290px;
+  width: 235px;
+}
+.other-event__event .list-events__list img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
 }/*# sourceMappingURL=style.css.map */

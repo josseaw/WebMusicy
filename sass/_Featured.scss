@@ -1,4 +1,41 @@
 .featured{
-    @include relative(100%, 719px);
+    @include relative(100%, 789px);
     margin-top: 780px;
+    &__list{
+        position: relative;
+        width: 100%;
+        @include padding-x(222px, 222px);
+    }
+    &__singer{
+        @include relative(100%, 579px);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 63px 222px;
+        background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0) 0%, rgba(16, 19, 36, 0.28) 32.81%, rgba(16, 19, 36, 0.87) 100%), url(../img/keagan-henman2.jpg); 
+        background-position: center;
+        background-size: cover;
+        .image{
+            @include relative(210px, 227px);
+            margin-top: 0;
+            img{
+                @include absolute(100%, 100%);
+            }
+            &__name{
+                position: relative;
+                width: 163px;
+                z-index: 2;
+                margin-top: 160px;
+                margin-left: 19px;
+                h5{
+                    color: $color-5;
+                    text-transform: capitalize;
+                }
+                p{
+                    @include p-4();
+                    color: $color-5;
+                    text-transform: capitalize;
+                }
+            }
+        }       
+    }
 }
