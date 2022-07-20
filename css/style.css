@@ -1673,6 +1673,13 @@ footer .contact span {
   height: 227px;
   width: 210px;
   margin-top: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.featured__singer .image:hover {
+  transform: scale(1.1);
+  z-index: 99;
+  border: 2px solid #375FEB;
 }
 .featured__singer .image img {
   position: absolute;
@@ -1749,6 +1756,12 @@ footer .contact span {
   position: relative;
   height: 290px;
   width: 235px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.other-event__event .list-events__list:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 10px 10px #375FEB;
 }
 .other-event__event .list-events__list img {
   position: absolute;
@@ -1783,4 +1796,84 @@ footer .contact span {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+}
+
+.gallery {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+.gallery__title {
+  position: relative;
+  width: 100%;
+  padding-left: 222px;
+  padding-right: 222px;
+}
+.gallery__deskripsi {
+  position: relative;
+  height: 190px;
+  width: 100%;
+  padding-left: 290px;
+  padding-right: 290px;
+  padding-top: 56px;
+}
+.gallery__deskripsi h3 {
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+}
+.gallery__deskripsi p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 16px;
+}
+.gallery__images {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.gallery__images--img {
+  position: relative;
+  height: 220px;
+  width: 245px;
+  background: #375FEB;
+  cursor: pointer;
+}
+.gallery__images--img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease-out;
+}
+.gallery__images--img:hover img {
+  opacity: 0.7;
+  border: 1px solid #375FEB;
+}
+.gallery__images--img div {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  margin-top: 180px;
+  z-index: -2;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+}
+.gallery__images--img:hover div {
+  z-index: 10;
+}
+
+.news {
+  position: relative;
+  height: 698px;
+  width: 100%;
+  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/yannis-papanastasopoulos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+// News
+.news{
+    @include relative(100%, 698px);
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/yannis-papanastasopoulos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

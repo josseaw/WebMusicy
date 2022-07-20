@@ -5,4 +5,52 @@
         width: 100%;
         @include padding-x(222px, 222px);
     }
+    &__deskripsi{
+        @include relative(100%, 190px);
+        @include padding-x(290px, 290px);
+        padding-top: 56px;
+        h3{
+            color: $color-5;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        p{
+            @include p-4();
+            color: rgba($color-5, 0.5);
+            text-align: center;
+            margin-top: 16px;
+        }
+    }
+    &__images{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        &--img{
+            @include relative(245px, 220px);
+            background: $primary;
+            cursor: pointer;
+            img{
+                @include absolute(100%, 100%);
+                transition: .5s ease-out;
+            }
+            &:hover img{
+                opacity: .7;
+                border: 1px solid $primary;
+            }
+            div{
+                @include relative(100%, 30px);
+                margin-top: 180px;
+                z-index: -2;
+                color: $color-5;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            &:hover div{
+                z-index: 10;
+            }
+        }
+    }
 }
