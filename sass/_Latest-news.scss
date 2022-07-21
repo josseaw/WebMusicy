@@ -1,0 +1,4 @@
+.latest-news{
+    @include relative(100%, 2020px);
+    @include padding-x(222px, 222px);
+}

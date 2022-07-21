@@ -33,7 +33,7 @@
         .list-event{
             @include relative(100%, 100%);
             @include flex(space-between);
-            @include padding-x(100px, 100px);
+            // @include padding-x(100px, 100px);
             bottom: -120px;
             background: #14182C;
             span{
@@ -329,6 +329,54 @@ nav{
             @include Medium-Upper(uppercase);
             color: $color-5;
             margin-top: 20px;
+        }
+    }
+}
+
+.news{
+    @include relative(100%, 698px);
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/yannis-papanastasopoulos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .slide-news{
+        position: relative;
+        width: 100%;
+        &__info{
+            display: flex;
+            flex-direction: column;
+            padding-top: 177px;
+            span{
+                @include p-2();
+                text-transform: capitalize;
+                color: $state-1;
+                &:first-child{
+                    @include relative(65px, 26px);
+                    @include flex(center);
+                    @include p-5();
+                    background: $state-4;
+                    border-radius: 5px;
+                    color: $color-5;
+                }
+                &:nth-child(2){
+                    margin-top: 20px;
+                }
+            }
+            h1{
+                color: $color-5;
+                margin-top: 8px;
+            }
+            p{
+                @include p-4();
+                color: rgba($color-5, 0.5);
+                margin-top: 32px;
+            }
+            a{
+                @include p-2();
+                color: $state-1;
+                text-decoration: none;
+                margin-top: 24px;
+            }
         }
     }
 }

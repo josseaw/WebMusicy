@@ -195,8 +195,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
   bottom: -120px;
   background: #14182C;
 }
@@ -593,6 +591,64 @@ nav .login a {
   line-height: 22px;
   color: #FFFFFF;
   margin-top: 20px;
+}
+
+.news {
+  position: relative;
+  height: 698px;
+  width: 100%;
+  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/yannis-papanastasopoulos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.news .slide-news {
+  position: relative;
+  width: 100%;
+}
+.news .slide-news__info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 177px;
+}
+.news .slide-news__info span {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #3B94E7;
+}
+.news .slide-news__info span:first-child {
+  position: relative;
+  height: 26px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  background: #FC0E0E;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+.news .slide-news__info span:nth-child(2) {
+  margin-top: 20px;
+}
+.news .slide-news__info h1 {
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+.news .slide-news__info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 32px;
+}
+.news .slide-news__info a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #3B94E7;
+  text-decoration: none;
+  margin-top: 24px;
 }
 
 footer {
@@ -1872,14 +1928,12 @@ footer .contact span {
   z-index: 10;
 }
 
-.news {
+.latest-news {
   position: relative;
-  height: 698px;
+  height: 2020px;
   width: 100%;
-  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../img/yannis-papanastasopoulos.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-left: 222px;
+  padding-right: 222px;
 }
 
 .contac {
@@ -1935,10 +1989,108 @@ footer .contact span {
   width: 858px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
   margin-top: -100px;
   background: #13172B;
   box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   border-radius: 5px;
+  overflow: hidden;
+}
+.contac__form form {
+  position: relative;
+  height: 100%;
+  width: 546px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 65px;
+}
+.contac__form form input {
+  position: relative;
+  height: 43px;
+  width: 100%;
+  background: #101324;
+  border: 1px solid #404250;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+  color: #FFFFFF;
+}
+.contac__form form input:focus {
+  border: 1px solid #375FEB;
+}
+.contac__form form .input {
+  position: relative;
+  height: 43px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.contac__form form .input input {
+  position: relative;
+  height: 100%;
+  width: 48%;
+  border: 1px solid #404250;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+  color: #FFFFFF;
+}
+.contac__form form .input input:focus {
+  border: 1px solid #375FEB;
+}
+.contac__form form textarea {
+  position: relative;
+  height: 174px;
+  width: 100%;
+  margin-top: 12px;
+  background: #101324;
+  border: 1px solid #404250;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  outline: none;
+  color: #FFFFFF;
+}
+.contac__form form textarea:focus {
+  border: 1px solid #375FEB;
+}
+.contac__form form .submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contac__form aside {
+  position: relative;
+  height: 100%;
+  width: 312px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 65px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.contac__form aside .detail {
+  position: relative;
+  height: 64px;
+  width: 100%;
+  margin-top: 60px;
+}
+.contac__form aside .detail:first-child {
+  margin-top: 0;
+}
+.contac__form aside .detail h6 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.contac__form aside .detail p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 16px;
+}
+.contac__form aside .detail img {
+  margin-left: 15px;
+}
+.contac__form aside .detail img:nth-child(3) {
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
