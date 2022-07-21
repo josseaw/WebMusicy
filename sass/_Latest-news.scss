@@ -1,4 +1,121 @@
 .latest-news{
-    @include relative(100%, 2020px);
+    @include relative(100%, 2100px);
     @include padding-x(222px, 222px);
+    &__box{
+        @include relative(100%, 319px);
+        display: flex;
+        border-radius: 10px;
+        background: $color-2;
+        box-shadow: 0px 157px 201px -110px rgba(0, 0, 0, 0.31);
+        overflow: hidden;
+        margin-top: 72px;
+        &--new{
+            @include relative(50%, 100%);
+            &:last-child{
+                @include padding-x(80px, 46px);
+                padding-top: 47px;
+            }
+            img{
+                @include absolute(100%, 100%);
+            }
+            h5{
+                color: $color-5;
+            }
+            p{
+                @include p-5();
+                color: rgba($color-5, 0.5);
+                margin-top: 22px;
+                margin-bottom: 21px;
+            }
+            a{
+                @include p-4();
+                color: $secondary-2;
+                text-decoration: none;
+            }
+        }
+    }
+    &__cards{
+        @include relative(100%, 355px);
+        @include flex(space-between);
+        margin-top: 32px;
+        .card{
+            @include relative(235px, 100%);
+            @include padding-x(16px, 16px);
+            background: $color-2;
+            box-shadow: 0px 69px 80px -30px rgba(0, 0, 0, 0.31);
+            overflow: hidden;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: .5s ease-out;
+            &:hover{
+                transform: translateY(-20px);
+                box-shadow: 0px 10px 10px $primary;
+            }
+            img{
+                @include absolute(100%, 206px);
+                top: 0;
+                left: 0;
+            }
+            h6{
+                color: $color-5;
+                margin-top: 230px;
+                margin-bottom: 25px;
+            }
+            a{
+                @include p-4();
+                color: $secondary-2;
+                text-decoration: none;
+            }
+        }
+    }
+    &__populer{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &--title{
+            position: relative;
+            width: 100%;
+            @include padding-y(100px, 21px);
+            border-bottom: 1px solid rgba($color-5, 0.13);
+            h6{
+                text-transform: capitalize;
+                color: $color-5;
+            }
+        }
+        &--info{
+            @include relative(100%, 248px);
+            @include flex(space-between);
+            border-bottom: 1px solid rgba($color-5, 0.13);
+            &__img{
+                @include relative(235px, 172px);
+                @include margin-y(auto, auto);
+                img{
+                    @include absolute(100%, 100%);
+                    border-radius: 3px;
+                }
+            }
+            &__detail{
+                @include relative(74%, 172px);
+                @include margin-y(auto, auto);
+                h6{
+                    color: $color-5;
+                    margin-top: 21px;
+                }
+                p{
+                    @include p-5();
+                    @include margin-y(21px, 16px);
+                    color: rgba($color-5, 0.5);
+                }
+                a{
+                    @include p-4();
+                    color: $secondary-2;
+                    text-decoration: none;
+                }
+            }
+        }
+        &--btn{
+            @include margin-x(auto, auto);
+        }
+    }
 }
