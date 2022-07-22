@@ -118,6 +118,12 @@ h6 {
   cursor: pointer;
   transition: 0.5s ease-out;
 }
+@media (max-width: 700px) {
+  .btn-bg {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .btn-bg:hover {
   opacity: 0.5;
 }
@@ -141,6 +147,12 @@ h6 {
   cursor: pointer;
   transition: 0.5s ease-out;
 }
+@media (max-width: 700px) {
+  .btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .btn:hover {
   background: #375FEB;
 }
@@ -159,7 +171,8 @@ h6 {
   height: 284px;
   width: 190px;
   margin-top: 140px;
-  margin-left: 641px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .home .title h1 {
   font-size: 94px;
@@ -186,7 +199,15 @@ h6 {
 .home .event {
   position: relative;
   height: 507px;
-  width: 100%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 700px) {
+  .home .event {
+    width: 450px;
+    height: 100%;
+  }
 }
 .home .event .list-event {
   position: relative;
@@ -198,6 +219,11 @@ h6 {
   bottom: -120px;
   background: #14182C;
 }
+@media (max-width: 700px) {
+  .home .event .list-event {
+    height: 110%;
+  }
+}
 .home .event .list-event span {
   margin-left: 20px;
   margin-right: 20px;
@@ -207,6 +233,11 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .home .event .list-event .sub-event {
+    flex-direction: column;
+  }
 }
 .home .event .list-event .sub-event .img-event {
   position: relative;
@@ -221,6 +252,14 @@ h6 {
   background-position: center;
   margin-left: 20px;
 }
+@media (max-width: 700px) {
+  .home .event .list-event .sub-event .img-event {
+    width: 200px;
+    height: 279px;
+    margin-left: 0;
+    margin-top: -80px;
+  }
+}
 .home .event .list-event .sub-event .img-event h3 {
   text-transform: capitalize;
   color: #FFFFFF;
@@ -230,6 +269,15 @@ h6 {
   height: 379px;
   width: 490px;
   margin-left: 90px;
+}
+@media (max-width: 700px) {
+  .home .event .list-event .sub-event .about-event {
+    width: 300px;
+    height: 379px;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 .home .event .list-event .sub-event .about-event p {
   font-size: 16px;
@@ -986,13 +1034,25 @@ footer .contact span {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 700px) {
+  .album {
+    margin-top: 720px;
+  }
+}
 .album .arrow {
   position: relative;
   height: 95px;
-  width: 100%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .album .arrow {
+    width: 450px;
+  }
 }
 .album .arrow span {
   margin-left: 20px;
@@ -1060,11 +1120,18 @@ footer .contact span {
 .title-big {
   position: relative;
   height: 190px;
-  width: 100%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 95px;
+}
+@media (max-width: 700px) {
+  .title-big {
+    width: 450px;
+  }
 }
 .title-big h2 {
   color: #FFFFFF;
@@ -1089,11 +1156,18 @@ footer .contact span {
 .songs .list-song {
   position: relative;
   height: 80%;
-  width: 100%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .songs .list-song {
+    width: 450px;
+  }
 }
 .songs .list-song .song {
   position: relative;

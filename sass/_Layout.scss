@@ -47,6 +47,10 @@
     margin-top: 38px;
     text-decoration: none;
     cursor: pointer;
+    @media (max-width: 700px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .p-x {

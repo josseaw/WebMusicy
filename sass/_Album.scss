@@ -8,9 +8,16 @@
     margin-top: 320px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 700px) {
+        margin-top: 720px;
+    }
     .arrow{
-        @include relative(100%, 95px);
+        @include relative(1000px, 95px);
+        @include margin-x(auto, auto);
         @include flex(space-between);
+        @media (max-width: 700px) {
+            width: 450px;
+        }
         span{
             @include margin-x(20px, 20px);
             cursor: pointer;
@@ -36,6 +43,7 @@
             .about{
                 @include relative(450px, 280px);
                 display: flex;
+                // display: none;
                 align-items: center;
                 flex-direction: column;
                 margin-top: 285px;
@@ -60,11 +68,15 @@
 }
 
 .title-big{
-    @include relative(100%, 190px);
+    @include relative(1000px, 190px);
+    @include margin-x(auto, auto);
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.150);
     padding-top: 95px;
+    @media (max-width: 700px) {
+        width: 450px;
+    }
     h2{
         color: $color-5;
         span{
