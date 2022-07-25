@@ -8,11 +8,18 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: column;
+        @media (max-width: 1000px) {
+            @include padding-x(0px, 0px);
+            text-align: center;
+        }
         .title{
             @include flex(center);
             position: relative;
             width: 100%;
             margin-top: 120px;
+            @media (max-width: 1000px) {
+                margin-top: 45px;
+            }
             h3{
                 color: $color-5;
             }
@@ -21,12 +28,19 @@ footer{
             @include flex(center);
             position: relative;
             width: 100%;
+            @media (max-width: 1000px) {
+                flex-direction: column;
+            }
             .input{
                 @include relative(450px, 70px);
                 @include flex(center);
                 background: rgba(255, 255, 255, 0.03);
                 border-radius: 47px;
                 margin-top: 39px;
+                @media (max-width: 1000px) {
+                    width: 88%;
+                    padding-left: 20px;
+                }
                 input{
                     @include relative(370px, 26px);
                     @include p-4();

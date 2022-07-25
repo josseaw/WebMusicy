@@ -1,7 +1,13 @@
 // Video
 .video{
-    @include relative(100%, 1382px);
+    @include relative(1000px, 1382px);
+    @include margin-x(auto, auto);
     background: #101324;
+    @media (max-width: 1000px) {
+        @include margin-x(auto, auto);
+        width: 100%;
+        height: 100%;
+    }
     .page-video{
         @include relative(100%, 562px);
         display: flex;
@@ -86,9 +92,17 @@
             position: relative;
             width: 100%;
             margin-top: 29px;
+            @media (max-width: 1000px) {
+                flex-direction: column;
+                margin-top: 15px;
+            }
             .videos{
                 position: relative;
                 width: 305px;
+                @media (max-width: 1000px) {
+                    @include margin-y(15px, 15px);
+                    text-align: center;
+                }
                 .play{
                     @include relative(100%, 172px);
                     @include flex(center);

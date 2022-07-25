@@ -1,15 +1,22 @@
 // Follow
 .follow{
-    @include relative(100%, 927px);
+    @include relative(1000px, 927px);
+    @include margin-x(auto, auto);
     @include flex(space-between);
     background: radial-gradient(49.35% 48.03% at 50% 51.97%, rgba(38, 79, 226, 0.49) 0%, rgba(38, 79, 226, 0.21) 23.44%, rgba(38, 79, 226, 0) 100%);
     backdrop-filter: blur(7px);
-    @media (max-width: 700px){
-        
+    @media (max-width: 1000px){
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
     }
     .about-follow{
         @include relative(243px, 298px);
         padding-top: 10px;
+        @media (max-width: 1000px) {
+            padding-top: 40px;
+            text-align: center;
+        }
         h2{
             color: $color-5;
         }
@@ -23,14 +30,30 @@
         @include relative(670px, 440px);
         @include flex(space-between);
         margin-top: 140px;
+        @media (max-width: 1000px){
+            height: 100%;
+            width: 100%;
+            margin-top: 150px;
+            margin-bottom: 50px;
+            flex-direction: column;
+        }
         .image{
             display: flex;
             flex-direction: column;
+            @media (max-width: 1000px){
+                flex-direction: row;
+            }
             &:nth-child(2){
                 margin-top: -140px;
+                @media (max-width: 1000px){
+                    margin-top: 15px;
+                }
             }
             &:nth-child(3){
                 margin-top: -160px;
+                @media (max-width: 1000px){
+                    margin-top: 15px;
+                }
             }
             .img{
                 @include relative(200px, 202px);
@@ -40,6 +63,10 @@
                 box-shadow: 0px 69px 80px -30px rgba(0, 0, 0, 0.31);
                 &:last-child{
                     margin-top: 31px;
+                    @media (max-width: 1000px){
+                        margin-top: 0px;
+                        margin-left: 10x;
+                    }
                 }
                 img{
                     @include absolute(100%, 100%);

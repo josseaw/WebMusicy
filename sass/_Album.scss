@@ -8,15 +8,15 @@
     margin-top: 320px;
     display: flex;
     flex-direction: column;
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         margin-top: 720px;
     }
     .arrow{
         @include relative(1000px, 95px);
         @include margin-x(auto, auto);
         @include flex(space-between);
-        @media (max-width: 700px) {
-            width: 450px;
+        @media (max-width: 1000px) {
+            width: 100%;
         }
         span{
             @include margin-x(20px, 20px);
@@ -61,6 +61,11 @@
                     @include relative(450px, 70px);
                     @include flex(space-between);
                     margin-top: 26px;
+                    @media (max-width: 700px) {
+                        margin-top: -35px;
+                        height: 200px;
+                        flex-direction: column;
+                    }
                 }
             }
         }
@@ -74,8 +79,8 @@
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.150);
     padding-top: 95px;
-    @media (max-width: 700px) {
-        width: 450px;
+    @media (max-width: 1000px) {
+        width: 100%;
     }
     h2{
         color: $color-5;

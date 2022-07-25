@@ -118,7 +118,7 @@ h6 {
   cursor: pointer;
   transition: 0.5s ease-out;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .btn-bg {
     margin-right: auto;
     margin-left: auto;
@@ -147,7 +147,7 @@ h6 {
   cursor: pointer;
   transition: 0.5s ease-out;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .btn {
     margin-right: auto;
     margin-left: auto;
@@ -203,9 +203,9 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .home .event {
-    width: 450px;
+    width: 100%;
     height: 100%;
   }
 }
@@ -213,13 +213,15 @@ h6 {
   position: relative;
   height: 100%;
   width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   bottom: -120px;
   background: #14182C;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .home .event .list-event {
     height: 110%;
   }
@@ -234,7 +236,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .home .event .list-event .sub-event {
     flex-direction: column;
   }
@@ -250,9 +252,8 @@ h6 {
   background: url(../img/spencer-davis.jpg);
   background-size: cover;
   background-position: center;
-  margin-left: 20px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .home .event .list-event .sub-event .img-event {
     width: 200px;
     height: 279px;
@@ -270,7 +271,7 @@ h6 {
   width: 490px;
   margin-left: 90px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .home .event .list-event .sub-event .about-event {
     width: 300px;
     height: 379px;
@@ -309,9 +310,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: top;
+}
+@media (max-width: 1000px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 nav .sosmed {
   position: relative;
@@ -323,10 +329,24 @@ nav .sosmed {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin-left: -222px;
 }
+@media (max-width: 1000px) {
+  nav .sosmed {
+    position: relative;
+    height: 87px;
+    width: 100px;
+    margin-left: 0px;
+    border-right: none;
+  }
+}
 nav .sosmed a {
   position: relative;
   height: 21px;
   width: 18px;
+}
+@media (max-width: 1000px) {
+  nav .sosmed a {
+    display: none;
+  }
 }
 nav .sosmed a:nth-child(2) {
   position: relative;
@@ -345,6 +365,19 @@ nav .sosmed a img {
   height: 100%;
   width: 100%;
 }
+nav .sosmed span {
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  margin-left: -40px;
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav .sosmed span {
+    display: block;
+  }
+}
 nav .links {
   position: relative;
   height: 87px;
@@ -352,6 +385,22 @@ nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  nav .links {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    flex-direction: column;
+    background: #101324;
+    top: 87px;
+    left: 0;
+    z-index: 99;
+  }
 }
 nav .links a {
   font-size: 16px;
@@ -361,6 +410,11 @@ nav .links a {
   color: #9FA1A7;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+  nav .links a {
+    margin-top: 20px;
+  }
 }
 nav .links a:first-child span {
   margin-left: 24px;
@@ -404,6 +458,15 @@ nav .login {
   width: 222px;
   margin-right: -222px;
 }
+@media (max-width: 1000px) {
+  nav .login {
+    margin-top: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 100;
+  }
+}
 nav .login a {
   position: absolute;
   height: 100%;
@@ -418,6 +481,26 @@ nav .login a {
   color: #FFFFFF;
   background: #375FEB;
   font-weight: bold;
+}
+@media (max-width: 1000px) {
+  nav .login a {
+    margin-left: -35px;
+  }
+}
+
+.button {
+  display: none;
+  color: #FFFFFF;
+}
+@media (max-width: 1000px) {
+  .button {
+    display: block;
+  }
+}
+
+.close {
+  display: none;
+  color: #FFFFFF;
 }
 
 .biography {
@@ -715,6 +798,13 @@ footer .subscribe {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 1000px) {
+  footer .subscribe {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+}
 footer .subscribe .title {
   display: flex;
   justify-content: center;
@@ -722,6 +812,11 @@ footer .subscribe .title {
   position: relative;
   width: 100%;
   margin-top: 120px;
+}
+@media (max-width: 1000px) {
+  footer .subscribe .title {
+    margin-top: 45px;
+  }
 }
 footer .subscribe .title h3 {
   color: #FFFFFF;
@@ -733,6 +828,11 @@ footer .subscribe .input-sub {
   position: relative;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  footer .subscribe .input-sub {
+    flex-direction: column;
+  }
+}
 footer .subscribe .input-sub .input {
   position: relative;
   height: 70px;
@@ -743,6 +843,12 @@ footer .subscribe .input-sub .input {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 47px;
   margin-top: 39px;
+}
+@media (max-width: 1000px) {
+  footer .subscribe .input-sub .input {
+    width: 88%;
+    padding-left: 20px;
+  }
 }
 footer .subscribe .input-sub .input input {
   position: relative;
@@ -931,7 +1037,7 @@ footer .contact span {
 }
 
 .slick-prev {
-  left: -25px;
+  left: 10px;
 }
 [dir=rtl] .slick-prev {
   left: auto;
@@ -940,12 +1046,9 @@ footer .contact span {
 .slick-prev:before {
   content: "←";
 }
-[dir=rtl] .slick-prev:before {
-  content: "→";
-}
 
 .slick-next {
-  right: -25px;
+  right: 10px;
 }
 [dir=rtl] .slick-next {
   left: -25px;
@@ -1034,7 +1137,7 @@ footer .contact span {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .album {
     margin-top: 720px;
   }
@@ -1049,9 +1152,9 @@ footer .contact span {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .album .arrow {
-    width: 450px;
+    width: 100%;
   }
 }
 .album .arrow span {
@@ -1116,6 +1219,13 @@ footer .contact span {
   align-items: center;
   margin-top: 26px;
 }
+@media (max-width: 700px) {
+  .album .slide-album .img-album .about .list-btn {
+    margin-top: -35px;
+    height: 200px;
+    flex-direction: column;
+  }
+}
 
 .title-big {
   position: relative;
@@ -1128,9 +1238,9 @@ footer .contact span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 95px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .title-big {
-    width: 450px;
+    width: 100%;
   }
 }
 .title-big h2 {
@@ -1164,9 +1274,14 @@ footer .contact span {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .songs .list-song {
     width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .songs .list-song {
+    width: 100%;
   }
 }
 .songs .list-song .song {
@@ -1202,9 +1317,16 @@ footer .contact span {
   margin-left: 35px;
   margin-right: 47px;
   width: 273px;
+  display: none;
 }
 .songs .list-song .song div:nth-child(3) {
   width: 287px;
+}
+@media (max-width: 1000px) {
+  .songs .list-song .song div:nth-child(3) {
+    width: 100px;
+    margin-left: 20px;
+  }
 }
 .songs .list-song .song div:nth-child(3) p {
   font-size: 16px;
@@ -1239,8 +1361,18 @@ footer .contact span {
 .video {
   position: relative;
   height: 1382px;
-  width: 100%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   background: #101324;
+}
+@media (max-width: 1000px) {
+  .video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+  }
 }
 .video .page-video {
   position: relative;
@@ -1353,9 +1485,22 @@ footer .contact span {
   width: 100%;
   margin-top: 29px;
 }
+@media (max-width: 1000px) {
+  .video .about-video .list-video {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
 .video .about-video .list-video .videos {
   position: relative;
   width: 305px;
+}
+@media (max-width: 1000px) {
+  .video .about-video .list-video .videos {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }
 .video .about-video .list-video .videos .play {
   position: relative;
@@ -1400,7 +1545,9 @@ footer .contact span {
 .follow {
   position: relative;
   height: 927px;
-  width: 100%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1408,11 +1555,24 @@ footer .contact span {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
 }
+@media (max-width: 1000px) {
+  .follow {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
 .follow .about-follow {
   position: relative;
   height: 298px;
   width: 243px;
   padding-top: 10px;
+}
+@media (max-width: 1000px) {
+  .follow .about-follow {
+    padding-top: 40px;
+    text-align: center;
+  }
 }
 .follow .about-follow h2 {
   color: #FFFFFF;
@@ -1432,15 +1592,39 @@ footer .contact span {
   align-items: center;
   margin-top: 140px;
 }
+@media (max-width: 1000px) {
+  .follow .image-follow {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+}
 .follow .image-follow .image {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1000px) {
+  .follow .image-follow .image {
+    flex-direction: row;
+  }
+}
 .follow .image-follow .image:nth-child(2) {
   margin-top: -140px;
 }
+@media (max-width: 1000px) {
+  .follow .image-follow .image:nth-child(2) {
+    margin-top: 15px;
+  }
+}
 .follow .image-follow .image:nth-child(3) {
   margin-top: -160px;
+}
+@media (max-width: 1000px) {
+  .follow .image-follow .image:nth-child(3) {
+    margin-top: 15px;
+  }
 }
 .follow .image-follow .image .img {
   position: relative;
@@ -1453,6 +1637,12 @@ footer .contact span {
 }
 .follow .image-follow .image .img:last-child {
   margin-top: 31px;
+}
+@media (max-width: 1000px) {
+  .follow .image-follow .image .img:last-child {
+    margin-top: 0px;
+    margin-left: 10x;
+  }
 }
 .follow .image-follow .image .img img {
   position: absolute;
