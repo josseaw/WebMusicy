@@ -11,9 +11,6 @@
         flex-direction: column;
         align-items: center;
         @media (max-width: 1000px) {
-            width: 450px;
-        }
-        @media (max-width: 500px) {
             width: 100%;
         }
         .song{
@@ -40,7 +37,9 @@
                 &:nth-child(2){
                     @include margin-x(35px, 47px);
                     width: 273px;
-                    display: none;
+                    @media (max-width: 600px) {
+                        display: none;
+                    }
                 }
                 &:nth-child(3){
                     width: 287px;

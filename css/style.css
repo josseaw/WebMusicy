@@ -561,21 +561,21 @@ nav .login a {
   top: 35px;
   background: linear-gradient(180deg, rgba(38, 79, 226, 0.2) 0%, rgba(38, 79, 226, 0) 100%);
 }
-.biography .event .list-event .events {
+.biography .event .list-event .event {
   position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.biography .event .list-event .events .sub-event {
+.biography .event .list-event .event .sub-event {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
 }
-.biography .event .list-event .events .sub-event .img-event {
+.biography .event .list-event .event .sub-event .img-event {
   position: relative;
   height: 469px;
   width: 50%;
@@ -586,7 +586,7 @@ nav .login a {
   display: flex;
   flex-direction: column;
 }
-.biography .event .list-event .events .sub-event .img-event span {
+.biography .event .list-event .event .sub-event .img-event span {
   font-size: 72px;
   text-transform: uppercase;
   line-height: 60px;
@@ -594,13 +594,13 @@ nav .login a {
   font-weight: bold;
   margin-left: 436px;
 }
-.biography .event .list-event .events .sub-event .img-event span:first-child {
+.biography .event .list-event .event .sub-event .img-event span:first-child {
   color: #375FEB;
 }
-.biography .event .list-event .events .sub-event .img-event span:nth-child(3) {
+.biography .event .list-event .event .sub-event .img-event span:nth-child(3) {
   color: #375FEB;
 }
-.biography .event .list-event .events .sub-event .about-event {
+.biography .event .list-event .event .sub-event .about-event {
   position: relative;
   height: 469px;
   width: 50%;
@@ -608,23 +608,23 @@ nav .login a {
   justify-content: center;
   align-items: center;
 }
-.biography .event .list-event .events .sub-event .about-event .text {
+.biography .event .list-event .event .sub-event .about-event .text {
   position: relative;
   height: 300px;
   width: 300px;
 }
-.biography .event .list-event .events .sub-event .about-event .text h2 {
+.biography .event .list-event .event .sub-event .about-event .text h2 {
   text-transform: capitalize;
   font-weight: bold;
   color: #FFFFFF;
 }
-.biography .event .list-event .events .sub-event .about-event .text p {
+.biography .event .list-event .event .sub-event .about-event .text p {
   font-size: 16px;
   line-height: 24px;
   color: #9FA1A7;
   margin-top: 33px;
 }
-.biography .event .list-event .events .list-box {
+.biography .event .list-event .event .list-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -632,7 +632,7 @@ nav .login a {
   width: 100%;
   margin-top: 130px;
 }
-.biography .event .list-event .events .list-box .box {
+.biography .event .list-event .event .list-box .box {
   position: relative;
   height: 218px;
   width: 228px;
@@ -640,16 +640,16 @@ nav .login a {
   border-radius: 5px;
   padding: 24px 28px;
 }
-.biography .event .list-event .events .list-box .box:nth-child(1) {
+.biography .event .list-event .event .list-box .box:nth-child(1) {
   margin-top: -70px;
 }
-.biography .event .list-event .events .list-box .box:nth-child(2) {
+.biography .event .list-event .event .list-box .box:nth-child(2) {
   margin-bottom: -120px;
 }
-.biography .event .list-event .events .list-box .box:nth-child(3) {
+.biography .event .list-event .event .list-box .box:nth-child(3) {
   margin-top: -210px;
 }
-.biography .event .list-event .events .list-box .box .title-box {
+.biography .event .list-event .event .list-box .box .title-box {
   position: relative;
   height: 44px;
   width: 100%;
@@ -657,10 +657,10 @@ nav .login a {
   justify-content: space-between;
   align-items: center;
 }
-.biography .event .list-event .events .list-box .box .title-box h2 {
+.biography .event .list-event .event .list-box .box .title-box h2 {
   color: #FFFFFF;
 }
-.biography .event .list-event .events .list-box .box .title-box span {
+.biography .event .list-event .event .list-box .box .title-box span {
   position: relative;
   height: 44px;
   width: 110px;
@@ -669,7 +669,7 @@ nav .login a {
   line-height: 22px;
   color: #FFFFFF;
 }
-.biography .event .list-event .events .list-box .box p {
+.biography .event .list-event .event .list-box .box p {
   font-size: 14px;
   line-height: 21px;
   position: relative;
@@ -1164,7 +1164,7 @@ footer .contact span {
 }
 .album .slide-album {
   position: absolute;
-  height: 415px;
+  height: 615px;
   width: 100%;
   left: 0;
   top: 280px;
@@ -1276,11 +1276,6 @@ footer .contact span {
 }
 @media (max-width: 1000px) {
   .songs .list-song {
-    width: 450px;
-  }
-}
-@media (max-width: 500px) {
-  .songs .list-song {
     width: 100%;
   }
 }
@@ -1317,7 +1312,11 @@ footer .contact span {
   margin-left: 35px;
   margin-right: 47px;
   width: 273px;
-  display: none;
+}
+@media (max-width: 600px) {
+  .songs .list-song .song div:nth-child(2) {
+    display: none;
+  }
 }
 .songs .list-song .song div:nth-child(3) {
   width: 287px;

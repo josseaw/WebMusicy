@@ -12,21 +12,18 @@ $(document).ready(function() {
         $('nav .links').slideUp(500);
         $('nav .login').slideUp(300);
     });
-    // $('.slide-album').slick({
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3
-    // });
+    $('.slide-album').slick({
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        enterPadding: '1000px',
+        prevArrow: $('#prevBtn'),
+        nextArrow: $('#nextBtn')
+    });
     $('.list-event').slick({
         infinite: true,
-        // arrow: false,
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    // $('.slide-news').slick({
-    //     infinite: true,
-    //     arrow: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
 });
