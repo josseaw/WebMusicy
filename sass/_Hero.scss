@@ -238,13 +238,13 @@ nav{
 .button{
     display: none;
     color: $color-5;
-    @media (max-width: 1000px) {
-        display: block;
-    }
 }
 .close{
     display: none;
     color: $color-5;
+    @media (max-width: 1000px) {
+        display: block;
+    }
 }
 
 .biography{
@@ -255,8 +255,8 @@ nav{
     background-repeat: no-repeat;
     .title{
         @include relative(600px, 284px);
+        @include margin-x(auto, auto);
         margin-top: 260px;
-        margin-left: 480px;
         h1{
             @include Big-Bold(uppercase);
             display: flex;
@@ -280,13 +280,14 @@ nav{
         }
     }
     .event{
-        @include relative(100%, 910px);
-        .list-event{
+        @include relative(1050px, 910px);
+        @include margin-x(auto, auto);
+        .list-events{
             @include relative(100%, 100%);
             padding: 20px;
             top: 35px;
             background: linear-gradient(180deg, rgba(38, 79, 226, 0.2) 0%, rgba(38, 79, 226, 0) 100%);
-            .event{
+            .event2{
                 @include relative(100%, 100%);
                 display: flex;
                 flex-direction: column;

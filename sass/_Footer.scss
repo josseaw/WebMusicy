@@ -37,9 +37,11 @@ footer{
                 background: rgba(255, 255, 255, 0.03);
                 border-radius: 47px;
                 margin-top: 39px;
-                @media (max-width: 1000px) {
-                    width: 88%;
+                @media (max-width: 700px) {
                     padding-left: 20px;
+                }
+                @media (max-width: 500px) {
+                    width: 88%;
                 }
                 input{
                     @include relative(370px, 26px);

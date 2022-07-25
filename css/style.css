@@ -492,15 +492,15 @@ nav .login a {
   display: none;
   color: #FFFFFF;
 }
-@media (max-width: 1000px) {
-  .button {
-    display: block;
-  }
-}
 
 .close {
   display: none;
   color: #FFFFFF;
+}
+@media (max-width: 1000px) {
+  .close {
+    display: block;
+  }
 }
 
 .biography {
@@ -516,8 +516,9 @@ nav .login a {
   position: relative;
   height: 284px;
   width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 260px;
-  margin-left: 480px;
 }
 .biography .title h1 {
   font-size: 94px;
@@ -551,9 +552,11 @@ nav .login a {
 .biography .event {
   position: relative;
   height: 910px;
-  width: 100%;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.biography .event .list-event {
+.biography .event .list-events {
   position: relative;
   height: 100%;
   width: 100%;
@@ -561,21 +564,21 @@ nav .login a {
   top: 35px;
   background: linear-gradient(180deg, rgba(38, 79, 226, 0.2) 0%, rgba(38, 79, 226, 0) 100%);
 }
-.biography .event .list-event .event {
+.biography .event .list-events .event2 {
   position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.biography .event .list-event .event .sub-event {
+.biography .event .list-events .event2 .sub-event {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
 }
-.biography .event .list-event .event .sub-event .img-event {
+.biography .event .list-events .event2 .sub-event .img-event {
   position: relative;
   height: 469px;
   width: 50%;
@@ -586,7 +589,7 @@ nav .login a {
   display: flex;
   flex-direction: column;
 }
-.biography .event .list-event .event .sub-event .img-event span {
+.biography .event .list-events .event2 .sub-event .img-event span {
   font-size: 72px;
   text-transform: uppercase;
   line-height: 60px;
@@ -594,13 +597,13 @@ nav .login a {
   font-weight: bold;
   margin-left: 436px;
 }
-.biography .event .list-event .event .sub-event .img-event span:first-child {
+.biography .event .list-events .event2 .sub-event .img-event span:first-child {
   color: #375FEB;
 }
-.biography .event .list-event .event .sub-event .img-event span:nth-child(3) {
+.biography .event .list-events .event2 .sub-event .img-event span:nth-child(3) {
   color: #375FEB;
 }
-.biography .event .list-event .event .sub-event .about-event {
+.biography .event .list-events .event2 .sub-event .about-event {
   position: relative;
   height: 469px;
   width: 50%;
@@ -608,23 +611,23 @@ nav .login a {
   justify-content: center;
   align-items: center;
 }
-.biography .event .list-event .event .sub-event .about-event .text {
+.biography .event .list-events .event2 .sub-event .about-event .text {
   position: relative;
   height: 300px;
   width: 300px;
 }
-.biography .event .list-event .event .sub-event .about-event .text h2 {
+.biography .event .list-events .event2 .sub-event .about-event .text h2 {
   text-transform: capitalize;
   font-weight: bold;
   color: #FFFFFF;
 }
-.biography .event .list-event .event .sub-event .about-event .text p {
+.biography .event .list-events .event2 .sub-event .about-event .text p {
   font-size: 16px;
   line-height: 24px;
   color: #9FA1A7;
   margin-top: 33px;
 }
-.biography .event .list-event .event .list-box {
+.biography .event .list-events .event2 .list-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -632,7 +635,7 @@ nav .login a {
   width: 100%;
   margin-top: 130px;
 }
-.biography .event .list-event .event .list-box .box {
+.biography .event .list-events .event2 .list-box .box {
   position: relative;
   height: 218px;
   width: 228px;
@@ -640,16 +643,16 @@ nav .login a {
   border-radius: 5px;
   padding: 24px 28px;
 }
-.biography .event .list-event .event .list-box .box:nth-child(1) {
+.biography .event .list-events .event2 .list-box .box:nth-child(1) {
   margin-top: -70px;
 }
-.biography .event .list-event .event .list-box .box:nth-child(2) {
+.biography .event .list-events .event2 .list-box .box:nth-child(2) {
   margin-bottom: -120px;
 }
-.biography .event .list-event .event .list-box .box:nth-child(3) {
+.biography .event .list-events .event2 .list-box .box:nth-child(3) {
   margin-top: -210px;
 }
-.biography .event .list-event .event .list-box .box .title-box {
+.biography .event .list-events .event2 .list-box .box .title-box {
   position: relative;
   height: 44px;
   width: 100%;
@@ -657,10 +660,10 @@ nav .login a {
   justify-content: space-between;
   align-items: center;
 }
-.biography .event .list-event .event .list-box .box .title-box h2 {
+.biography .event .list-events .event2 .list-box .box .title-box h2 {
   color: #FFFFFF;
 }
-.biography .event .list-event .event .list-box .box .title-box span {
+.biography .event .list-events .event2 .list-box .box .title-box span {
   position: relative;
   height: 44px;
   width: 110px;
@@ -669,7 +672,7 @@ nav .login a {
   line-height: 22px;
   color: #FFFFFF;
 }
-.biography .event .list-event .event .list-box .box p {
+.biography .event .list-events .event2 .list-box .box p {
   font-size: 14px;
   line-height: 21px;
   position: relative;
@@ -844,10 +847,14 @@ footer .subscribe .input-sub .input {
   border-radius: 47px;
   margin-top: 39px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
+  footer .subscribe .input-sub .input {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 500px) {
   footer .subscribe .input-sub .input {
     width: 88%;
-    padding-left: 20px;
   }
 }
 footer .subscribe .input-sub .input input {
