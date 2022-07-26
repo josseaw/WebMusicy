@@ -5,10 +5,14 @@ $(document).ready(function() {
         $('.close').css({ "display": "block" });
         $('nav .links').slideDown(300);
         $('nav .login').slideDown(500);
+        $('nav .links').css({ "display": "flex" });
+        $('nav .login').css({ "display": "block" });
     });
     $('.close').on('click', function() {
         $(this).css({ "display": "none" });
         $('.button').css({ "display": "block" });
+        // $('nav .links').css({ "display": "none" });
+        // $('nav .login').css({ "display": "none" });
         $('nav .links').slideUp(500);
         $('nav .login').slideUp(300);
     });
